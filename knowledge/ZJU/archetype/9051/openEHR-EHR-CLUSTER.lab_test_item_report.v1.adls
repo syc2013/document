@@ -1,0 +1,108 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-CLUSTER.lab_test_item_report.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"0493A933BB8D9A86778CB42E9CA2E382">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Lab test item report
+		items matches {
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- TestItemID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {	-- ReportItemID
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.clinical_item_dict\.v1/}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- ReportItemNO
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- Result
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {	-- UNIT
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {	-- AbnormalIndicator
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0012] occurrences matches {0..*} matches {	-- DeviceID
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.device_dict\.v1/}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {	-- ResultDateTime
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Lab test item report">
+				description = <"unknown">
+			>
+			["at0003"] = <
+				text = <"TestItemID">
+				description = <"*">
+			>
+			["at0005"] = <
+				text = <"ReportItemNO">
+				description = <"*">
+			>
+			["at0006"] = <
+				text = <"Result">
+				description = <"*">
+			>
+			["at0007"] = <
+				text = <"UNIT">
+				description = <"*">
+			>
+			["at0008"] = <
+				text = <"AbnormalIndicator">
+				description = <"*">
+			>
+			["at0010"] = <
+				text = <"ResultDateTime">
+				description = <"*">
+			>
+			["at0011"] = <
+				text = <"ReportItemID">
+				description = <"*">
+			>
+			["at0012"] = <
+				text = <"DeviceID">
+				description = <"*">
+			>
+		>
+	>

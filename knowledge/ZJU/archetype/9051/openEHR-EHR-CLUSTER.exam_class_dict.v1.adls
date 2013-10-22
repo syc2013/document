@@ -1,0 +1,74 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-CLUSTER.exam_class_dict.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"1873E8D2AEC479B7BAE7F586E9A340BE">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Exam class dict
+		items matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- TerminologyID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Code
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- InputCode
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Exam class dict">
+				description = <"unknown">
+			>
+			["at0001"] = <
+				text = <"TerminologyID">
+				description = <"*">
+			>
+			["at0002"] = <
+				text = <"Code">
+				description = <"*">
+			>
+			["at0003"] = <
+				text = <"Name">
+				description = <"*">
+			>
+			["at0004"] = <
+				text = <"InputCode">
+				description = <"*">
+			>
+		>
+	>

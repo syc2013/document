@@ -1,0 +1,92 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-CLUSTER.exam_relationship.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"1EE4BFC74A1E4401CB06BD824A84FA3C">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Exam relationship
+		items matches {
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- SourceType
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- TargetType
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {	-- RelationshipName
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {	-- RelationshipMeaning
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {	-- SourceID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {	-- TargetID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Exam relationship">
+				description = <"unknown">
+			>
+			["at0004"] = <
+				text = <"SourceType">
+				description = <"*">
+			>
+			["at0006"] = <
+				text = <"TargetType">
+				description = <"*">
+			>
+			["at0007"] = <
+				text = <"RelationshipName">
+				description = <"*">
+			>
+			["at0008"] = <
+				text = <"RelationshipMeaning">
+				description = <"*">
+			>
+			["at0011"] = <
+				text = <"SourceID">
+				description = <"*">
+			>
+			["at0012"] = <
+				text = <"TargetID">
+				description = <"*">
+			>
+		>
+	>

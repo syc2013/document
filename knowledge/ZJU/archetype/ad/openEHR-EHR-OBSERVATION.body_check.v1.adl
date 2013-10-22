@@ -1,0 +1,1187 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.body_check.v1
+
+concept
+	[at0000]	-- Body check
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"用于描述病人的体格检查情况">
+			use = <"">
+			misuse = <"">
+			copyright = <"ZJU">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"3E202F5B822E2DCA3B31CD50801DE40D">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Body check
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- 身高
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::122]>
+												list = <
+													["1"] = <
+														units = <"cm">
+														magnitude = <|0.0..500.0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- 体重
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::124]>
+												list = <
+													["1"] = <
+														units = <"kg">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- 腰围
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::122]>
+												list = <
+													["1"] = <
+														units = <"cm">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- 臀围
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::122]>
+												list = <
+													["1"] = <
+														units = <"cm">
+													>
+												>
+											>
+										}
+									}
+									CLUSTER[at0009] occurrences matches {0..1} matches {	-- 血压(坐位)
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0010] occurrences matches {0..1} matches {	-- 收缩压
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::125]>
+														list = <
+															["1"] = <
+																units = <"mm[Hg]">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {	-- 舒张压
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::125]>
+														list = <
+															["1"] = <
+																units = <"mm[Hg]">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0012] occurrences matches {0..1} matches {	-- 系统检查
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0013] occurrences matches {0..1} matches {	-- B1(一般情况)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0017] occurrences matches {0..1} matches {	-- B2(皮肤)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0021] occurrences matches {0..1} matches {	-- B3(颈部/甲状腺)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0025] occurrences matches {0..1} matches {	-- B4(眼)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0029] occurrences matches {0..1} matches {	-- B5(耳鼻咽喉)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0033] occurrences matches {0..1} matches {	-- B6(肺)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0037] occurrences matches {0..1} matches {	-- B7(心脏)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0041] occurrences matches {0..1} matches {	-- B8(腹部)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0045] occurrences matches {0..1} matches {	-- B9(脊柱)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0049] occurrences matches {0..1} matches {	-- B10(淋巴/血管)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0053] occurrences matches {0..1} matches {	-- B11(四肢/关节)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0057] occurrences matches {0..1} matches {	-- B12(神经系统)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0061] occurrences matches {0..1} matches {	-- B12a(高级功能)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0065] occurrences matches {0..1} matches {	-- B12b(颅神经)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0069] occurrences matches {0..1} matches {	-- B12c(运动)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0073] occurrences matches {0..1} matches {	-- B12d(感觉)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0077] occurrences matches {0..1} matches {	-- B12e(反射)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0081] occurrences matches {0..1} matches {	-- B12f(病理反射)
+												value matches {
+													0|[local::at0014], 	-- 未查
+													1|[local::at0015], 	-- 正常
+													2|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0107] occurrences matches {0..1} matches {	-- B1(一般情况)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0108] occurrences matches {0..1} matches {	-- B2(皮肤)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0109] occurrences matches {0..1} matches {	-- B3(颈部/甲状腺)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0110] occurrences matches {0..1} matches {	-- B4(眼)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0111] occurrences matches {0..1} matches {	-- B5(耳鼻咽喉)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0112] occurrences matches {0..1} matches {	-- B6(肺)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0113] occurrences matches {0..1} matches {	-- B7(心脏)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0114] occurrences matches {0..1} matches {	-- B8(腹部)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0115] occurrences matches {0..1} matches {	-- B9(脊柱)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0116] occurrences matches {0..1} matches {	-- B10(淋巴/血管)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0117] occurrences matches {0..1} matches {	-- B11(四肢/关节)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0118] occurrences matches {0..1} matches {	-- B12(神经系统)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0119] occurrences matches {0..1} matches {	-- B12a(高级功能)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0120] occurrences matches {0..1} matches {	-- B12b(颅神经)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0121] occurrences matches {0..1} matches {	-- B12c(运动)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0122] occurrences matches {0..1} matches {	-- B12d(感觉)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0123] occurrences matches {0..1} matches {	-- B12e(反射)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0124] occurrences matches {0..1} matches {	-- B12f(病理反射)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									ELEMENT[at0106] occurrences matches {0..1} matches {	-- PatientId
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									CLUSTER[at0125] occurrences matches {0..1} matches {	-- 甲状腺功能
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0126] occurrences matches {0..1} matches {	-- FT3
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"pmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0127] occurrences matches {0..1} matches {	-- FT4
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"pmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0128] occurrences matches {0..1} matches {	-- TT3
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"pmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0129] occurrences matches {0..1} matches {	-- TT4
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"pmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0130] occurrences matches {0..1} matches {	-- TSH
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mU/l">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0131] occurrences matches {0..1} matches {	-- 代谢
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0132] occurrences matches {0..1} matches {	-- 叶酸
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"nanogm/ml">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0133] occurrences matches {0..1} matches {	-- B12
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"pmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0134] occurrences matches {0..1} matches {	-- 同半胱
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"µmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0135] occurrences matches {0..1} matches {	-- 空G
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0136] occurrences matches {0..1} matches {	-- 餐后G
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0137] occurrences matches {0..1} matches {	-- HbA1c
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"%">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0138] occurrences matches {0..1} matches {	-- 尿酸
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"µmol/l">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0139] occurrences matches {0..1} matches {	-- 血脂
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0140] occurrences matches {0..1} matches {	-- 胆固醇
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0141] occurrences matches {0..1} matches {	-- 甘三脂
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0142] occurrences matches {0..1} matches {	-- HDL-C
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0143] occurrences matches {0..1} matches {	-- LDL-C
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0144] occurrences matches {0..1} matches {	-- 肝肾功能
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0145] occurrences matches {0..1} matches {	-- GOT/AST
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"U/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0146] occurrences matches {0..1} matches {	-- GPT/ALT
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"U/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0147] occurrences matches {0..1} matches {	-- BUN
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"mmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0148] occurrences matches {0..1} matches {	-- CR
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"µmol/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0149] occurrences matches {0..1} matches {	-- 白蛋白
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"gm/l">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0150] occurrences matches {0..1} matches {	-- 血象
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0151] occurrences matches {0..1} matches {	-- RBC
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"U/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0152] occurrences matches {0..1} matches {	-- HB
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"gm/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0153] occurrences matches {0..1} matches {	-- PLT
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"10^9/l">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0154] occurrences matches {0..1} matches {	-- WBC
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::119]>
+														list = <
+															["1"] = <
+																units = <"10^9/l">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0155] occurrences matches {0..1} matches {	-- 分子生物学
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0156] occurrences matches {0..1} matches {	-- ApoE-Ɛ4
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0157] occurrences matches {0..1} matches {	-- 钙稳态调节蛋白
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0158] occurrences matches {0..1} matches {	-- 心电图
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0159] occurrences matches {0..1} matches {	-- 检查日期
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0160] occurrences matches {0..1} matches {	-- 检查结果
+												value matches {
+													0|[local::at0015], 	-- 正常
+													1|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0161] occurrences matches {0..1} matches {	-- 详细记录
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0162] occurrences matches {0..1} matches {	-- 超声心动
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0163] occurrences matches {0..1} matches {	-- 检查日期
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0164] occurrences matches {0..1} matches {	-- 检查结果
+												value matches {
+													0|[local::at0015], 	-- 正常
+													1|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0165] occurrences matches {0..1} matches {	-- 详细记录
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0166] occurrences matches {0..1} matches {	-- EF
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"%">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									CLUSTER[at0167] occurrences matches {0..1} matches {	-- 脑电图
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0168] occurrences matches {0..1} matches {	-- 检查日期
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0169] occurrences matches {0..1} matches {	-- 检查结果
+												value matches {
+													0|[local::at0015], 	-- 正常
+													1|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0170] occurrences matches {0..1} matches {	-- 详细记录
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0171] occurrences matches {0..1} matches {	-- CT/MRI
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0172] occurrences matches {0..1} matches {	-- 检查日期
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0173] occurrences matches {0..1} matches {	-- 检查结果
+												value matches {
+													0|[local::at0015], 	-- 正常
+													1|[local::at0016]  	-- 异常 
+												}
+											}
+											ELEMENT[at0174] occurrences matches {0..1} matches {	-- 详细记录
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Body check">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"身高">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"体重">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"腰围">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"臀围">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"血压(坐位)">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"收缩压">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"舒张压">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"系统检查">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"B1(一般情况)">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"未查">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"正常">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"异常 ">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"B2(皮肤)">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"B3(颈部/甲状腺)">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"B4(眼)">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"B5(耳鼻咽喉)">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"B6(肺)">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"B7(心脏)">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"B8(腹部)">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"B9(脊柱)">
+					description = <"*">
+				>
+				["at0049"] = <
+					text = <"B10(淋巴/血管)">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"B11(四肢/关节)">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"B12(神经系统)">
+					description = <"*">
+				>
+				["at0061"] = <
+					text = <"B12a(高级功能)">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"B12b(颅神经)">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"B12c(运动)">
+					description = <"*">
+				>
+				["at0073"] = <
+					text = <"B12d(感觉)">
+					description = <"*">
+				>
+				["at0077"] = <
+					text = <"B12e(反射)">
+					description = <"*">
+				>
+				["at0081"] = <
+					text = <"B12f(病理反射)">
+					description = <"*">
+				>
+				["at0106"] = <
+					text = <"PatientId">
+					description = <"*">
+				>
+				["at0107"] = <
+					text = <"B1(一般情况)">
+					description = <"*">
+				>
+				["at0108"] = <
+					text = <"B2(皮肤)">
+					description = <"*">
+				>
+				["at0109"] = <
+					text = <"B3(颈部/甲状腺)">
+					description = <"*">
+				>
+				["at0110"] = <
+					text = <"B4(眼)">
+					description = <"*">
+				>
+				["at0111"] = <
+					text = <"B5(耳鼻咽喉)">
+					description = <"*">
+				>
+				["at0112"] = <
+					text = <"B6(肺)">
+					description = <"*">
+				>
+				["at0113"] = <
+					text = <"B7(心脏)">
+					description = <"*">
+				>
+				["at0114"] = <
+					text = <"B8(腹部)">
+					description = <"*">
+				>
+				["at0115"] = <
+					text = <"B9(脊柱)">
+					description = <"*">
+				>
+				["at0116"] = <
+					text = <"B10(淋巴/血管)">
+					description = <"*">
+				>
+				["at0117"] = <
+					text = <"B11(四肢/关节)">
+					description = <"*">
+				>
+				["at0118"] = <
+					text = <"B12(神经系统)">
+					description = <"*">
+				>
+				["at0119"] = <
+					text = <"B12a(高级功能)">
+					description = <"*">
+				>
+				["at0120"] = <
+					text = <"B12b(颅神经)">
+					description = <"*">
+				>
+				["at0121"] = <
+					text = <"B12c(运动)">
+					description = <"*">
+				>
+				["at0122"] = <
+					text = <"B12d(感觉)">
+					description = <"*">
+				>
+				["at0123"] = <
+					text = <"B12e(反射)">
+					description = <"*">
+				>
+				["at0124"] = <
+					text = <"B12f(病理反射)">
+					description = <"*">
+				>
+				["at0125"] = <
+					text = <"甲状腺功能">
+					description = <"*">
+				>
+				["at0126"] = <
+					text = <"FT3">
+					description = <"*">
+				>
+				["at0127"] = <
+					text = <"FT4">
+					description = <"*">
+				>
+				["at0128"] = <
+					text = <"TT3">
+					description = <"*">
+				>
+				["at0129"] = <
+					text = <"TT4">
+					description = <"*">
+				>
+				["at0130"] = <
+					text = <"TSH">
+					description = <"*">
+				>
+				["at0131"] = <
+					text = <"代谢">
+					description = <"*">
+				>
+				["at0132"] = <
+					text = <"叶酸">
+					description = <"*">
+				>
+				["at0133"] = <
+					text = <"B12">
+					description = <"*">
+				>
+				["at0134"] = <
+					text = <"同半胱">
+					description = <"*">
+				>
+				["at0135"] = <
+					text = <"空G">
+					description = <"*">
+				>
+				["at0136"] = <
+					text = <"餐后G">
+					description = <"*">
+				>
+				["at0137"] = <
+					text = <"HbA1c">
+					description = <"*">
+				>
+				["at0138"] = <
+					text = <"尿酸">
+					description = <"*">
+				>
+				["at0139"] = <
+					text = <"血脂">
+					description = <"*">
+				>
+				["at0140"] = <
+					text = <"胆固醇">
+					description = <"*">
+				>
+				["at0141"] = <
+					text = <"甘三脂">
+					description = <"*">
+				>
+				["at0142"] = <
+					text = <"HDL-C">
+					description = <"*">
+				>
+				["at0143"] = <
+					text = <"LDL-C">
+					description = <"*">
+				>
+				["at0144"] = <
+					text = <"肝肾功能">
+					description = <"*">
+				>
+				["at0145"] = <
+					text = <"GOT/AST">
+					description = <"*">
+				>
+				["at0146"] = <
+					text = <"GPT/ALT">
+					description = <"*">
+				>
+				["at0147"] = <
+					text = <"BUN">
+					description = <"*">
+				>
+				["at0148"] = <
+					text = <"CR">
+					description = <"*">
+				>
+				["at0149"] = <
+					text = <"白蛋白">
+					description = <"*">
+				>
+				["at0150"] = <
+					text = <"血象">
+					description = <"*">
+				>
+				["at0151"] = <
+					text = <"RBC">
+					description = <"*">
+				>
+				["at0152"] = <
+					text = <"HB">
+					description = <"*">
+				>
+				["at0153"] = <
+					text = <"PLT">
+					description = <"*">
+				>
+				["at0154"] = <
+					text = <"WBC">
+					description = <"*">
+				>
+				["at0155"] = <
+					text = <"分子生物学">
+					description = <"*">
+				>
+				["at0156"] = <
+					text = <"ApoE-Ɛ4">
+					description = <"*">
+				>
+				["at0157"] = <
+					text = <"钙稳态调节蛋白">
+					description = <"*">
+				>
+				["at0158"] = <
+					text = <"心电图">
+					description = <"*">
+				>
+				["at0159"] = <
+					text = <"检查日期">
+					description = <"*">
+				>
+				["at0160"] = <
+					text = <"检查结果">
+					description = <"*">
+				>
+				["at0161"] = <
+					text = <"详细记录">
+					description = <"*">
+				>
+				["at0162"] = <
+					text = <"超声心动">
+					description = <"*">
+				>
+				["at0163"] = <
+					text = <"检查日期">
+					description = <"*">
+				>
+				["at0164"] = <
+					text = <"检查结果">
+					description = <"*">
+				>
+				["at0165"] = <
+					text = <"详细记录">
+					description = <"*">
+				>
+				["at0166"] = <
+					text = <"EF">
+					description = <"*">
+				>
+				["at0167"] = <
+					text = <"脑电图">
+					description = <"*">
+				>
+				["at0168"] = <
+					text = <"检查日期">
+					description = <"*">
+				>
+				["at0169"] = <
+					text = <"检查结果">
+					description = <"*">
+				>
+				["at0170"] = <
+					text = <"详细记录">
+					description = <"*">
+				>
+				["at0171"] = <
+					text = <"CT/MRI">
+					description = <"*">
+				>
+				["at0172"] = <
+					text = <"检查日期">
+					description = <"*">
+				>
+				["at0173"] = <
+					text = <"检查结果">
+					description = <"*">
+				>
+				["at0174"] = <
+					text = <"详细记录">
+					description = <"*">
+				>
+			>
+		>
+	>

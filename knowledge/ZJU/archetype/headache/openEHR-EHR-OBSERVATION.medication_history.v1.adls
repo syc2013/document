@@ -1,0 +1,111 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-OBSERVATION.medication_history.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"32C15648AD31DD488214FA9B6E52CC8C">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Medication history
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items matches {
+									CLUSTER[at0004] occurrences matches {0..1} matches {	-- 用药史
+										items matches {
+											ELEMENT[at0005] occurrences matches {0..1} matches {	-- 既往服药名称
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0006] occurrences matches {0..1} matches {	-- 既往每月服药天数
+												value matches {
+													(C_DV_QUANTITY) <
+														property = <[openehr::128]>
+														list = <
+															["1"] = <
+																units = <"d">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0007] occurrences matches {0..1} matches {	-- 既往服药总月数
+												value matches {
+													(C_DV_QUANTITY) <
+														property = <[openehr::128]>
+														list = <
+															["1"] = <
+																units = <"mo">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			["at0000"] = <
+				text = <"Medication history">
+				description = <"unknown">
+			>
+			["at0001"] = <
+				text = <"Event Series">
+				description = <"@ internal @">
+			>
+			["at0002"] = <
+				text = <"Any event">
+				description = <"*">
+			>
+			["at0003"] = <
+				text = <"Tree">
+				description = <"@ internal @">
+			>
+			["at0004"] = <
+				text = <"用药史">
+				description = <"*">
+			>
+			["at0005"] = <
+				text = <"既往服药名称">
+				description = <"*">
+			>
+			["at0006"] = <
+				text = <"既往每月服药天数">
+				description = <"*">
+			>
+			["at0007"] = <
+				text = <"既往服药总月数">
+				description = <"*">
+			>
+		>
+	>

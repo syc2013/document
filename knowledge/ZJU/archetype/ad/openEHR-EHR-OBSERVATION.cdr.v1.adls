@@ -1,0 +1,350 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-OBSERVATION.cdr.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"临床痴呆评定量表(Clinical Dementia Rating CDR )，该量表是医生通过从与患者和其家属交谈中获得信息，并加以提炼完成对患者认知受损程度的评估，继而快速评定患者病情的严重程度。">
+			use = <"评分标准：
+记忆（M）是主要项目，其他是次要项目。
+如果至少3个次要项目计分与记忆计分相同，则CDR=M
+当3个或以上次要项目计分高于或低于记忆计分时，CDR=多数次要项目的分值
+当3个次要项目计分在M的一侧，2个次要项目计分在M的另一侧时，CDR=M
+当M=0. 5时，如果至少有3个其他项目计分为1或以上，则CDR=1。
+如果M=0. 5，CDR不能为0，只能是0. 5或1。
+如果M=0，CDR=0，除非在 2个或以上次要项目存在损害（0. 5或以上），这时CDR=0. 5。
+特殊情况：
+1、次要项目集中在M一侧时，选择离M最近的计分为CDR得分（例，M和一个次要项目=3，2个次要项目=2，2个次要项目=1，则CDR=2）。
+2、当只有1个或2个次要项目与M分值相同时，只要不超过2个次要项目在M的另一边，CDR=M。
+3、当M=1或以上，CDR不能为0；在这种情况下，当次要项目的大多数为0时，CDR= 0. 5。
+">
+			keywords = <"CDR", ...>
+			misuse = <"">
+			copyright = <"ZJU">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"330B199CD4A5D9137142AF257F9A5C1F">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Cdr
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_LIST[at0003] matches {	-- List
+								items matches {
+									ELEMENT[at0057] occurrences matches {0..1} matches {	-- VisitID
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- 记忆力
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0016, 	-- 无痴呆 CDR 0
+													at0017, 	-- 可疑痴呆 CDR 0.5
+													at0018, 	-- 轻度痴呆 CDR 1.0
+													at0019, 	-- 中度痴呆 CDR 2.0
+													at0020]	-- 重度痴呆 CDR 3.0
+												}
+											}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {	-- 定向力
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0022, 	-- 无痴呆 CDR 0
+													at0023, 	-- 可疑痴呆 CDR 0.5
+													at0024, 	-- 轻度痴呆 CDR 1.0
+													at0025, 	-- 中度痴呆 CDR 2.0
+													at0026]	-- 重度痴呆 CDR 3.0
+												}
+											}
+										}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {	-- 判断力+解决问题能力
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0028, 	-- 无痴呆 CDR 0
+													at0029, 	-- 可疑痴呆 CDR 0.5
+													at0030, 	-- 轻度痴呆 CDR 1.0
+													at0031, 	-- 中度痴呆 CDR 2.0
+													at0032]	-- 重度痴呆 CDR 3.0
+												}
+											}
+										}
+									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {	-- 社会事务
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0034, 	-- 无痴呆 CDR 0
+													at0035, 	-- 可疑痴呆 CDR 0.5
+													at0036, 	-- 轻度痴呆 CDR 1.0
+													at0037, 	-- 中度痴呆 CDR 2.0
+													at0038]	-- 重度痴呆 CDR 3.0
+												}
+											}
+										}
+									}
+									ELEMENT[at0039] occurrences matches {0..1} matches {	-- 家庭+爱好
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0040, 	-- 无痴呆 CDR 0
+													at0041, 	-- 可疑痴呆 CDR 0.5
+													at0042, 	-- 轻度痴呆 CDR 1.0
+													at0043, 	-- 中度痴呆 CDR 2.0
+													at0044]	-- 重度痴呆 CDR 3.0
+												}
+											}
+										}
+									}
+									ELEMENT[at0045] occurrences matches {0..1} matches {	-- 个人料理
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0046, 	-- 无痴呆CDR 0
+													at0047, 	-- 可疑痴呆 CDR 0.5
+													at0048, 	-- 轻度痴呆 CDR 1.0
+													at0049, 	-- 中度痴呆 CDR 2.0
+													at0050]	-- 重度痴呆 CDR 3.0
+												}
+											}
+										}
+									}
+									ELEMENT[at0051] occurrences matches {0..1} matches {	-- 综合CDR值
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0052, 	-- 0
+													at0053, 	-- 0.5
+													at0054, 	-- 1.0
+													at0055, 	-- 2.0
+													at0056]	-- 3.0
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Cdr">
+				description = <"unknown">
+			>
+			["at0001"] = <
+				text = <"Event Series">
+				description = <"@ internal @">
+			>
+			["at0002"] = <
+				text = <"Any event">
+				description = <"*">
+			>
+			["at0003"] = <
+				text = <"List">
+				description = <"@ internal @">
+			>
+			["at0015"] = <
+				text = <"记忆力">
+				description = <"*">
+			>
+			["at0016"] = <
+				text = <"无痴呆 CDR 0">
+				description = <"无记忆力缺损或只有轻度不恒定的健忘">
+			>
+			["at0017"] = <
+				text = <"可疑痴呆 CDR 0.5">
+				description = <"轻度、持续的健忘；对事情能部分回忆，属“良性”健忘">
+			>
+			["at0018"] = <
+				text = <"轻度痴呆 CDR 1.0">
+				description = <"中度记忆缺损；对近事遗忘突出，有碍日常活动的记忆缺损">
+			>
+			["at0019"] = <
+				text = <"中度痴呆 CDR 2.0">
+				description = <"严重记忆缺损；能记住过去非常熟悉的事情，新材料则很快遗忘">
+			>
+			["at0020"] = <
+				text = <"重度痴呆 CDR 3.0">
+				description = <"严重记忆丧失；仅存片断的记忆">
+			>
+			["at0021"] = <
+				text = <"定向力">
+				description = <"*">
+			>
+			["at0022"] = <
+				text = <"无痴呆 CDR 0">
+				description = <"能完全正确定向">
+			>
+			["at0023"] = <
+				text = <"可疑痴呆 CDR 0.5">
+				description = <"除时间定向有轻微困难外，能完全正确定向">
+			>
+			["at0024"] = <
+				text = <"轻度痴呆 CDR 1.0">
+				description = <"*">
+			>
+			["at0025"] = <
+				text = <"中度痴呆 CDR 2.0">
+				description = <"时间定向有严重困难；通常对时间不能定向，常有地点失定向">
+			>
+			["at0026"] = <
+				text = <"重度痴呆 CDR 3.0">
+				description = <"仅有人物定向">
+			>
+			["at0027"] = <
+				text = <"判断力+解决问题能力">
+				description = <"*">
+			>
+			["at0028"] = <
+				text = <"无痴呆 CDR 0">
+				description = <"能很好解决日常问题、处理职业事务和财务；判断力良好，与过去的水平有关">
+			>
+			["at0029"] = <
+				text = <"可疑痴呆 CDR 0.5">
+				description = <"在解决问题、判别事物间的异同点方面有轻微缺损">
+			>
+			["at0030"] = <
+				text = <"轻度痴呆 CDR 1.0">
+				description = <"在解决问题、判别事物间的异同点方面有中度困难；社会判断力通常保存">
+			>
+			["at0031"] = <
+				text = <"中度痴呆 CDR 2.0">
+				description = <"在解决问题、判别事物间的异同点方面有严重损害；社会判断力通常受损">
+			>
+			["at0032"] = <
+				text = <"重度痴呆 CDR 3.0">
+				description = <"不能做出判断，或不能解决问题">
+			>
+			["at0033"] = <
+				text = <"社会事务">
+				description = <"*">
+			>
+			["at0034"] = <
+				text = <"无痴呆 CDR 0">
+				description = <"在工作、购物、志愿者和社会团体方面独立的水平与过去相同">
+			>
+			["at0035"] = <
+				text = <"可疑痴呆 CDR 0.5">
+				description = <"在这些活动方面有轻微损害">
+			>
+			["at0036"] = <
+				text = <"轻度痴呆 CDR 1.0">
+				description = <"虽然可能还参加但已不能独立进行这些活动；偶尔检查是正常">
+			>
+			["at0037"] = <
+				text = <"中度痴呆 CDR 2.0">
+				description = <"不能独立进行室外活动；但可被带到室外活动">
+			>
+			["at0038"] = <
+				text = <"重度痴呆 CDR 3.0">
+				description = <"不能独立进行室外活动；病重得不能被带到室外活动">
+			>
+			["at0039"] = <
+				text = <"家庭+爱好">
+				description = <"*">
+			>
+			["at0040"] = <
+				text = <"无痴呆 CDR 0">
+				description = <"家庭生活、爱好和需用智力的兴趣均很好保持">
+			>
+			["at0041"] = <
+				text = <"可疑痴呆 CDR 0.5">
+				description = <"家庭生活、爱好和需用智力的兴趣轻微受损">
+			>
+			["at0042"] = <
+				text = <"轻度痴呆 CDR 1.0">
+				description = <"家庭活动轻度障碍是肯定的，放弃难度大的家务，放弃复杂的爱好和兴趣">
+			>
+			["at0043"] = <
+				text = <"中度痴呆 CDR 2.0">
+				description = <"仅能作简单家务，兴趣保持的范围和水平都非常有限">
+			>
+			["at0044"] = <
+				text = <"重度痴呆 CDR 3.0">
+				description = <"丧失有意义的家庭活动">
+			>
+			["at0045"] = <
+				text = <"个人料理">
+				description = <"*">
+			>
+			["at0046"] = <
+				text = <"无痴呆CDR 0">
+				description = <"完全有能力自我照料">
+			>
+			["at0047"] = <
+				text = <"可疑痴呆 CDR 0.5">
+				description = <"完全有能力自我照料">
+			>
+			["at0048"] = <
+				text = <"轻度痴呆 CDR 1.0">
+				description = <"需要督促">
+			>
+			["at0049"] = <
+				text = <"中度痴呆 CDR 2.0">
+				description = <"在穿着、卫生、个人财务保管方面需要帮助">
+			>
+			["at0050"] = <
+				text = <"重度痴呆 CDR 3.0">
+				description = <"个人料理需要很多帮助；经常二便失禁">
+			>
+			["at0051"] = <
+				text = <"综合CDR值">
+				description = <"*">
+			>
+			["at0052"] = <
+				text = <"0">
+				description = <"无痴呆">
+			>
+			["at0053"] = <
+				text = <"0.5">
+				description = <"可疑痴呆">
+			>
+			["at0054"] = <
+				text = <"1.0">
+				description = <"轻度痴呆">
+			>
+			["at0055"] = <
+				text = <"2.0">
+				description = <"中度痴呆">
+			>
+			["at0056"] = <
+				text = <"3.0">
+				description = <"重度痴呆">
+			>
+			["at0057"] = <
+				text = <"VisitID">
+				description = <"*">
+			>
+		>
+	>

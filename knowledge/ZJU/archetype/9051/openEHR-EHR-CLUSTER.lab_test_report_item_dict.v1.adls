@@ -1,0 +1,155 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-CLUSTER.lab_test_report_item_dict.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"A9CE6DA8784C2FDD93EF9221D11BBCA3">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Lab test report item dict
+		items matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- TerminologyID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Code
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- InputCode
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- ItemNO
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- ResultType
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {	-- LowerLimit
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {	-- UpperLimit
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {	-- UNIT
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {	-- PrintContext
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {	-- MinIncrement
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {	-- Notes
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {	-- DefaultValue
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Lab test report item dict">
+				description = <"unknown">
+			>
+			["at0001"] = <
+				text = <"TerminologyID">
+				description = <"*">
+			>
+			["at0002"] = <
+				text = <"Code">
+				description = <"*">
+			>
+			["at0003"] = <
+				text = <"Name">
+				description = <"*">
+			>
+			["at0004"] = <
+				text = <"InputCode">
+				description = <"*">
+			>
+			["at0005"] = <
+				text = <"ItemNO">
+				description = <"*">
+			>
+			["at0006"] = <
+				text = <"ResultType">
+				description = <"*">
+			>
+			["at0007"] = <
+				text = <"LowerLimit">
+				description = <"*">
+			>
+			["at0008"] = <
+				text = <"UpperLimit">
+				description = <"*">
+			>
+			["at0009"] = <
+				text = <"UNIT">
+				description = <"*">
+			>
+			["at0010"] = <
+				text = <"PrintContext">
+				description = <"*">
+			>
+			["at0011"] = <
+				text = <"MinIncrement">
+				description = <"*">
+			>
+			["at0012"] = <
+				text = <"Notes">
+				description = <"*">
+			>
+			["at0013"] = <
+				text = <"DefaultValue">
+				description = <"*">
+			>
+		>
+	>

@@ -1,0 +1,95 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-CLUSTER.exam_subclass_dict.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"96F06604ABADDA4E03D03502167E18C3">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Exam subclass dict
+		items matches {
+			allow_archetype CLUSTER[at0001] occurrences matches {0..*} matches {	-- ExamClassID
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.exam_class_dict\.v1/}
+				exclude
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- TerminologyID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Code
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- Name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- InputCode
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- Thumb
+				value matches {
+					DV_MULTIMEDIA matches {
+						media_type matches {[openEHR::]}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Exam subclass dict">
+				description = <"unknown">
+			>
+			["at0001"] = <
+				text = <"ExamClassID">
+				description = <"*">
+			>
+			["at0002"] = <
+				text = <"TerminologyID">
+				description = <"*">
+			>
+			["at0003"] = <
+				text = <"Code">
+				description = <"*">
+			>
+			["at0004"] = <
+				text = <"Name">
+				description = <"*">
+			>
+			["at0005"] = <
+				text = <"InputCode">
+				description = <"*">
+			>
+			["at0006"] = <
+				text = <"Thumb">
+				description = <"*">
+			>
+		>
+	>

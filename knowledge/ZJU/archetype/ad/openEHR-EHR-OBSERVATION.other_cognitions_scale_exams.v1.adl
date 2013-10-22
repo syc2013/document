@@ -1,0 +1,1235 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.other_cognitions_scale_exams.v1
+
+concept
+	[at0000]	-- Other cognitions scale exams
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"通过本原型结合其他相关的原型来对病患进行认知能力的综合评估">
+			use = <"结合MMSE、MoCA、GDS、CDR、ADL等认知量表进行综合分析">
+			misuse = <"">
+			copyright = <"ZJU">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"7A5F4459BDF68EB3DCA297497EAE5B10">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Other cognitions scale exams
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0004] occurrences matches {0..1} matches {	-- 词表学习
+										items cardinality matches {1..*; unordered} matches {
+											CLUSTER[at0061] occurrences matches {0..1} matches {	-- C2A第一次
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0064] occurrences matches {0..1} matches {	-- 声音
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0065] occurrences matches {0..1} matches {	-- 上学
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0066] occurrences matches {0..1} matches {	-- 财产
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0067] occurrences matches {0..1} matches {	-- 形状
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0068] occurrences matches {0..1} matches {	-- 天气
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0069] occurrences matches {0..1} matches {	-- 游戏
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0070] occurrences matches {0..1} matches {	-- 服务
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0071] occurrences matches {0..1} matches {	-- 道理
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0072] occurrences matches {0..1} matches {	-- 消息
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0073] occurrences matches {0..1} matches {	-- 力量
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+												}
+											}
+											ELEMENT[at0005] occurrences matches {0..1} matches {	-- 第一次得分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											CLUSTER[at0062] occurrences matches {0..1} matches {	-- C2B第二次
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0074] occurrences matches {0..1} matches {	-- 游戏
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0075] occurrences matches {0..1} matches {	-- 天气
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0076] occurrences matches {0..1} matches {	-- 服务
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0077] occurrences matches {0..1} matches {	-- 形状
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0078] occurrences matches {0..1} matches {	-- 力量
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0079] occurrences matches {0..1} matches {	-- 声音
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0080] occurrences matches {0..1} matches {	-- 消息
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0081] occurrences matches {0..1} matches {	-- 上学
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0082] occurrences matches {0..1} matches {	-- 道理
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0083] occurrences matches {0..1} matches {	-- 财产
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+												}
+											}
+											ELEMENT[at0006] occurrences matches {0..1} matches {	-- 第二次得分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											CLUSTER[at0084] occurrences matches {0..1} matches {	-- C2C第三次
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0085] occurrences matches {0..1} matches {	-- 上学
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0086] occurrences matches {0..1} matches {	-- 天气
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0087] occurrences matches {0..1} matches {	-- 道理
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0088] occurrences matches {0..1} matches {	-- 财产
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0089] occurrences matches {0..1} matches {	-- 游戏
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0090] occurrences matches {0..1} matches {	-- 消息
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0091] occurrences matches {0..1} matches {	-- 力量
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0092] occurrences matches {0..1} matches {	-- 声音
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0093] occurrences matches {0..1} matches {	-- 形状
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0094] occurrences matches {0..1} matches {	-- 服务
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+												}
+											}
+											ELEMENT[at0007] occurrences matches {0..1} matches {	-- 第三次得分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											CLUSTER[at0095] occurrences matches {0..1} matches {	-- C2D第四次
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0097] occurrences matches {0..1} matches {	-- 声音
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0098] occurrences matches {0..1} matches {	-- 上学
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0099] occurrences matches {0..1} matches {	-- 财产
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0100] occurrences matches {0..1} matches {	-- 形状
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0101] occurrences matches {0..1} matches {	-- 天气
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0102] occurrences matches {0..1} matches {	-- 游戏
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0103] occurrences matches {0..1} matches {	-- 服务
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0104] occurrences matches {0..1} matches {	-- 道理
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0105] occurrences matches {0..1} matches {	-- 消息
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+													ELEMENT[at0106] occurrences matches {0..1} matches {	-- 力量
+														value matches {
+															DV_BOOLEAN matches {
+																value matches {True, False}
+															}
+														}
+													}
+												}
+											}
+											ELEMENT[at0096] occurrences matches {0..1} matches {	-- 第四次得分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0009] occurrences matches {0..1} matches {	-- 图形记忆
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0058] occurrences matches {0..1} matches {	-- C3A图形复制总分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0059] occurrences matches {0..1} matches {	-- C3B即刻回忆总分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0060] occurrences matches {0..1} matches {	-- C3C延迟回忆总分
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											CLUSTER[at0028] occurrences matches {0..1} matches {	-- 完整的大正方形
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0023] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0027] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0029] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0030] occurrences matches {0..1} matches {	-- 2条交叉的对角线
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0037] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0044] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0051] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0031] occurrences matches {0..1} matches {	-- 右侧三角形
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0038] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0045] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0052] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0032] occurrences matches {0..1} matches {	-- 折向上的箭头
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0039] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0046] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0053] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0033] occurrences matches {0..1} matches {	-- 夹角为90度的倒菱形
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0040] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0047] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0054] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0034] occurrences matches {0..1} matches {	-- 小长方形
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0041] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0048] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0055] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0035] occurrences matches {0..1} matches {	-- 小圆形
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0042] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0049] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0056] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+											CLUSTER[at0036] occurrences matches {0..1} matches {	-- 正十字
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0043] occurrences matches {0..1} matches {	-- C3A图形复制
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0050] occurrences matches {0..1} matches {	-- C3B即刻回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+													ELEMENT[at0057] occurrences matches {0..1} matches {	-- C3C延迟回忆
+														value matches {
+															0|[local::at0024], 	-- 0
+															1|[local::at0025], 	-- 1
+															2|[local::at0026]  	-- 2
+														}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0016] occurrences matches {0..1} matches {	-- 连线测验
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0018] occurrences matches {0..1} matches {	-- 连线A完成时间
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::128]>
+														list = <
+															["1"] = <
+																units = <"s">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0019] occurrences matches {0..1} matches {	-- 连线B完成时间
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::128]>
+														list = <
+															["1"] = <
+																units = <"s">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {	-- VisitID
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									CLUSTER[at0107] occurrences matches {0..1} matches {	-- 词语辨认
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0109] occurrences matches {0..1} matches {	-- 跑步
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0110] occurrences matches {0..1} matches {	-- 安排
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0111] occurrences matches {0..1} matches {	-- 力量
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0112] occurrences matches {0..1} matches {	-- 金属
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0113] occurrences matches {0..1} matches {	-- 游戏
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0114] occurrences matches {0..1} matches {	-- 道理
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0115] occurrences matches {0..1} matches {	-- 交流
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0116] occurrences matches {0..1} matches {	-- 形状
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0117] occurrences matches {0..1} matches {	-- 关系
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0118] occurrences matches {0..1} matches {	-- 健康
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0119] occurrences matches {0..1} matches {	-- 服务
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0120] occurrences matches {0..1} matches {	-- 联合
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0121] occurrences matches {0..1} matches {	-- 财产
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0122] occurrences matches {0..1} matches {	-- 头脑
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0123] occurrences matches {0..1} matches {	-- 歌曲
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0124] occurrences matches {0..1} matches {	-- 消息
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0125] occurrences matches {0..1} matches {	-- 图像
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0126] occurrences matches {0..1} matches {	-- 天气
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0127] occurrences matches {0..1} matches {	-- 上学
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0128] occurrences matches {0..1} matches {	-- 声音
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Other cognitions scale exams">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"词表学习">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"第一次得分">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"第二次得分">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"第三次得分">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"图形记忆">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"连线测验">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"连线A完成时间">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"连线B完成时间">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"VisitID">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"0">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"1">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"2">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"完整的大正方形">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"2条交叉的对角线">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"右侧三角形">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"折向上的箭头">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"夹角为90度的倒菱形">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"小长方形">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"小圆形">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"正十字">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"C3A图形复制">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0049"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"C3B即刻回忆">
+					description = <"*">
+				>
+				["at0051"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0052"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0054"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0055"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0056"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"C3C延迟回忆">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"C3A图形复制总分">
+					description = <"*">
+				>
+				["at0059"] = <
+					text = <"C3B即刻回忆总分">
+					description = <"*">
+				>
+				["at0060"] = <
+					text = <"C3C延迟回忆总分">
+					description = <"*">
+				>
+				["at0061"] = <
+					text = <"C2A第一次">
+					description = <"*">
+				>
+				["at0062"] = <
+					text = <"C2B第二次">
+					description = <"*">
+				>
+				["at0064"] = <
+					text = <"声音">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"上学">
+					description = <"*">
+				>
+				["at0066"] = <
+					text = <"财产">
+					description = <"*">
+				>
+				["at0067"] = <
+					text = <"形状">
+					description = <"*">
+				>
+				["at0068"] = <
+					text = <"天气">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"游戏">
+					description = <"*">
+				>
+				["at0070"] = <
+					text = <"服务">
+					description = <"*">
+				>
+				["at0071"] = <
+					text = <"道理">
+					description = <"*">
+				>
+				["at0072"] = <
+					text = <"消息">
+					description = <"*">
+				>
+				["at0073"] = <
+					text = <"力量">
+					description = <"*">
+				>
+				["at0074"] = <
+					text = <"游戏">
+					description = <"*">
+				>
+				["at0075"] = <
+					text = <"天气">
+					description = <"*">
+				>
+				["at0076"] = <
+					text = <"服务">
+					description = <"*">
+				>
+				["at0077"] = <
+					text = <"形状">
+					description = <"*">
+				>
+				["at0078"] = <
+					text = <"力量">
+					description = <"*">
+				>
+				["at0079"] = <
+					text = <"声音">
+					description = <"*">
+				>
+				["at0080"] = <
+					text = <"消息">
+					description = <"*">
+				>
+				["at0081"] = <
+					text = <"上学">
+					description = <"*">
+				>
+				["at0082"] = <
+					text = <"道理">
+					description = <"*">
+				>
+				["at0083"] = <
+					text = <"财产">
+					description = <"*">
+				>
+				["at0084"] = <
+					text = <"C2C第三次">
+					description = <"*">
+				>
+				["at0085"] = <
+					text = <"上学">
+					description = <"*">
+				>
+				["at0086"] = <
+					text = <"天气">
+					description = <"*">
+				>
+				["at0087"] = <
+					text = <"道理">
+					description = <"*">
+				>
+				["at0088"] = <
+					text = <"财产">
+					description = <"*">
+				>
+				["at0089"] = <
+					text = <"游戏">
+					description = <"*">
+				>
+				["at0090"] = <
+					text = <"消息">
+					description = <"*">
+				>
+				["at0091"] = <
+					text = <"力量">
+					description = <"*">
+				>
+				["at0092"] = <
+					text = <"声音">
+					description = <"*">
+				>
+				["at0093"] = <
+					text = <"形状">
+					description = <"*">
+				>
+				["at0094"] = <
+					text = <"服务">
+					description = <"*">
+				>
+				["at0095"] = <
+					text = <"C2D第四次">
+					description = <"*">
+				>
+				["at0096"] = <
+					text = <"第四次得分">
+					description = <"*">
+				>
+				["at0097"] = <
+					text = <"声音">
+					description = <"*">
+				>
+				["at0098"] = <
+					text = <"上学">
+					description = <"*">
+				>
+				["at0099"] = <
+					text = <"财产">
+					description = <"*">
+				>
+				["at0100"] = <
+					text = <"形状">
+					description = <"*">
+				>
+				["at0101"] = <
+					text = <"天气">
+					description = <"*">
+				>
+				["at0102"] = <
+					text = <"游戏">
+					description = <"*">
+				>
+				["at0103"] = <
+					text = <"服务">
+					description = <"*">
+				>
+				["at0104"] = <
+					text = <"道理">
+					description = <"*">
+				>
+				["at0105"] = <
+					text = <"消息">
+					description = <"*">
+				>
+				["at0106"] = <
+					text = <"力量">
+					description = <"*">
+				>
+				["at0107"] = <
+					text = <"词语辨认">
+					description = <"*">
+				>
+				["at0109"] = <
+					text = <"跑步">
+					description = <"*">
+				>
+				["at0110"] = <
+					text = <"安排">
+					description = <"*">
+				>
+				["at0111"] = <
+					text = <"力量">
+					description = <"*">
+				>
+				["at0112"] = <
+					text = <"金属">
+					description = <"*">
+				>
+				["at0113"] = <
+					text = <"游戏">
+					description = <"*">
+				>
+				["at0114"] = <
+					text = <"道理">
+					description = <"*">
+				>
+				["at0115"] = <
+					text = <"交流">
+					description = <"*">
+				>
+				["at0116"] = <
+					text = <"形状">
+					description = <"*">
+				>
+				["at0117"] = <
+					text = <"关系">
+					description = <"*">
+				>
+				["at0118"] = <
+					text = <"健康">
+					description = <"*">
+				>
+				["at0119"] = <
+					text = <"服务">
+					description = <"*">
+				>
+				["at0120"] = <
+					text = <"联合">
+					description = <"*">
+				>
+				["at0121"] = <
+					text = <"财产">
+					description = <"*">
+				>
+				["at0122"] = <
+					text = <"头脑">
+					description = <"*">
+				>
+				["at0123"] = <
+					text = <"歌曲">
+					description = <"*">
+				>
+				["at0124"] = <
+					text = <"消息">
+					description = <"*">
+				>
+				["at0125"] = <
+					text = <"图像">
+					description = <"*">
+				>
+				["at0126"] = <
+					text = <"天气">
+					description = <"*">
+				>
+				["at0127"] = <
+					text = <"上学">
+					description = <"*">
+				>
+				["at0128"] = <
+					text = <"声音">
+					description = <"*">
+				>
+			>
+		>
+	>

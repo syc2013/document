@@ -1,0 +1,102 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-CLUSTER.exam_data.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"3F156C5B78DAFD2FE91706311A79B5F5">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Exam data
+		items matches {
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- ExamID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {	-- DeviceID
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.device_dict\.v1/}
+				exclude
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- DataType
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {	-- FirstMediaID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {	-- FirstPath
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {	-- SecondMediaID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {	-- SecondPath
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Exam data">
+				description = <"unknown">
+			>
+			["at0003"] = <
+				text = <"ExamID">
+				description = <"*">
+			>
+			["at0005"] = <
+				text = <"DeviceID">
+				description = <"*">
+			>
+			["at0006"] = <
+				text = <"DataType">
+				description = <"*">
+			>
+			["at0007"] = <
+				text = <"FirstMediaID">
+				description = <"*">
+			>
+			["at0008"] = <
+				text = <"FirstPath">
+				description = <"*">
+			>
+			["at0009"] = <
+				text = <"SecondMediaID">
+				description = <"*">
+			>
+			["at0010"] = <
+				text = <"SecondPath">
+				description = <"*">
+			>
+		>
+	>

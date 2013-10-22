@@ -1,0 +1,40 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-EHR_STATUS.ehr_status.v1
+
+concept
+	[at0000]	-- Ehr_status
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"49185094998FD3AB9CDDE4C5F3912235">
+	>
+
+definition
+	EHR_STATUS[at0000] matches {*}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ehr_status">
+					description = <"unknown">
+				>
+			>
+		>
+	>

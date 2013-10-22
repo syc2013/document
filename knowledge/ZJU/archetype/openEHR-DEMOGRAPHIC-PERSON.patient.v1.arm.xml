@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="openEHR-DEMOGRAPHIC-PERSON.patient.v1">
+        <id name="/uid/value"/>
+        <property name="/details[at0001]/items[at0003]/value/value"/>
+        <property name="/details[at0001]/items[at0004]/value/value"/>
+        <property name="/details[at0001]/items[at0009]/value/value"/>
+        <set name="/details[at0001]/items[at0032]/onetomany" inverse="true">
+            <key column="/context/other_context[at0001]/items[at0015]/value/value"/>
+            <one-to-many class="openEHR-EHR-COMPOSITION.visit.v3"/>
+        </set>
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,274 @@
+archetype (adl_version=1.5; generated)
+	openEHR-EHR-OBSERVATION.order.v1
+
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"9B6AD8E59CE1D52A3AF6D17401416456">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Order
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items matches {
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- OrderNO
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>=0|}
+											}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- RepeatIndicator
+										value matches {
+											DV_BOOLEAN matches {
+												value matches {True, False; True}
+											}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- OrderContent
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Duration
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- DurationUnit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Frequency
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- FrequencyInterval
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {	-- FrequencyIntervalUnit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- FrequencyDetail
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Administration
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {	-- Dosage
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {	-- DosageUnit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {	-- Amount
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {	-- AmountUnit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {	-- Repetition
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {	-- MedicineNumbers
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {	-- MedicineNumbersUnit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- NumberPerPackage
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {	-- Memo
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0030] occurrences matches {0..*} matches {	-- DepartmentID
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.department_dict\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {	-- DoctorID
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {	-- StartDateTime
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0029] occurrences matches {0..1} matches {	-- EndDateTime
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			["at0000"] = <
+				text = <"Order">
+				description = <"unknown">
+			>
+			["at0001"] = <
+				text = <"Event Series">
+				description = <"@ internal @">
+			>
+			["at0002"] = <
+				text = <"Any event">
+				description = <"*">
+			>
+			["at0003"] = <
+				text = <"Tree">
+				description = <"@ internal @">
+			>
+			["at0007"] = <
+				text = <"OrderNO">
+				description = <"*">
+			>
+			["at0008"] = <
+				text = <"RepeatIndicator">
+				description = <"*">
+			>
+			["at0009"] = <
+				text = <"OrderContent">
+				description = <"*">
+			>
+			["at0010"] = <
+				text = <"Duration">
+				description = <"*">
+			>
+			["at0011"] = <
+				text = <"Frequency">
+				description = <"*">
+			>
+			["at0012"] = <
+				text = <"FrequencyInterval">
+				description = <"*">
+			>
+			["at0013"] = <
+				text = <"DurationUnit">
+				description = <"*">
+			>
+			["at0014"] = <
+				text = <"FrequencyIntervalUnit">
+				description = <"*">
+			>
+			["at0015"] = <
+				text = <"FrequencyDetail">
+				description = <"*">
+			>
+			["at0016"] = <
+				text = <"Administration">
+				description = <"*">
+			>
+			["at0017"] = <
+				text = <"Dosage">
+				description = <"*">
+			>
+			["at0018"] = <
+				text = <"DosageUnit">
+				description = <"*">
+			>
+			["at0019"] = <
+				text = <"Amount">
+				description = <"*">
+			>
+			["at0020"] = <
+				text = <"AmountUnit">
+				description = <"*">
+			>
+			["at0021"] = <
+				text = <"Repetition">
+				description = <"*">
+			>
+			["at0022"] = <
+				text = <"MedicineNumbers">
+				description = <"*">
+			>
+			["at0023"] = <
+				text = <"MedicineNumbersUnit">
+				description = <"*">
+			>
+			["at0024"] = <
+				text = <"NumberPerPackage">
+				description = <"*">
+			>
+			["at0025"] = <
+				text = <"Memo">
+				description = <"*">
+			>
+			["at0027"] = <
+				text = <"DoctorID">
+				description = <"*">
+			>
+			["at0028"] = <
+				text = <"StartDateTime">
+				description = <"*">
+			>
+			["at0029"] = <
+				text = <"EndDateTime">
+				description = <"*">
+			>
+			["at0030"] = <
+				text = <"DepartmentID">
+				description = <"*">
+			>
+		>
+	>
