@@ -1,0 +1,139 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.exam_request_assist.v1
+
+concept
+	[at0000]	-- Exam request assist
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"B73C2EB05C7CD039032B4B075C1085E0">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Exam request assist
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- exam_class_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- exam_class_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- exam_sub_class_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- exam_sub_class_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- exam_item_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- exam_item_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- remind_string
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- valid
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Exam request assist">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"exam_class_name">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"exam_class_code">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"exam_sub_class_name">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"exam_sub_class_code">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"exam_item_name">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"exam_item_code">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"remind_string">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"valid">
+					description = <"*">
+				>
+			>
+		>
+	>

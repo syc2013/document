@@ -1,0 +1,184 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.lab_test_data.v1
+
+concept
+	[at0000]	-- Lab test data
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"44CCE7CA40C94FEC67173626CF2E2922">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Lab test data
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- patient_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- visit_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- test_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- test_item_no
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- test_item_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- test_item_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- result
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- units
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- abnormal_indicator
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- normal_reference_values
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {	-- instrument_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- result_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- test_data_id
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Lab test data">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"patient_id">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"visit_id">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"test_id">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"test_item_no">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"test_item_name">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"test_item_code">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"result">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"units">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"abnormal_indicator">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"normal_reference_values">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"instrument_id">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"result_date_time">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"test_data_id">
+					description = <"*">
+				>
+			>
+		>
+	>

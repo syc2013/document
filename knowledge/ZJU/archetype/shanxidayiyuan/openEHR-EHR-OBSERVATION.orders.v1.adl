@@ -1,0 +1,519 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.orders.v1
+
+concept
+	[at0000]	-- Orders
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"4A1F7027B3D85E830C64A82C26CD0E02">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Orders
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- order_id
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- patient_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- visit_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- order_no
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- order_sub_no
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- emergency_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- mother_baby_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- own_drug_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- skin_test_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- reserved_order_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {	-- afterward_order_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- repeat_indicator
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- order_class
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {	-- order_text
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {	-- order_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {	-- dosage
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::381]>
+											>
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {	-- dosage_units
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {	-- administration_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {	-- administration
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {	-- start_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- stop_date_time_plan
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {	-- stop_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0026] occurrences matches {0..1} matches {	-- duration
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {	-- duration_units
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {	-- freq_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0029] occurrences matches {0..1} matches {	-- frequency
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0030] occurrences matches {0..1} matches {	-- freq_counter
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0031] occurrences matches {0..1} matches {	-- freq_interval
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0032] occurrences matches {0..1} matches {	-- freq_interval_unit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {	-- memo
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {	-- ordering_dept_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0035] occurrences matches {0..1} matches {	-- ordering_dept_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..1} matches {	-- start_doctor_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0037] occurrences matches {0..1} matches {	-- start_doctor_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0038] occurrences matches {0..1} matches {	-- stop_doctor_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0039] occurrences matches {0..1} matches {	-- stop_doctor_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0040] occurrences matches {0..1} matches {	-- perform_ward_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0041] occurrences matches {0..1} matches {	-- perform_ward_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0042] occurrences matches {0..1} matches {	-- start_nurse_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0043] occurrences matches {0..1} matches {	-- start_nurse_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {	-- stop_nurse_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0045] occurrences matches {0..1} matches {	-- stop_nurse_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0046] occurrences matches {0..1} matches {	-- start_order_enter_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0047] occurrences matches {0..1} matches {	-- stop_order_enter_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0048] occurrences matches {0..1} matches {	-- order_status
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0049] occurrences matches {0..1} matches {	-- cds_semantics
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0050] occurrences matches {0..1} matches {	-- order_print_attr
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0051] occurrences matches {0..1} matches {	-- last_perform_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0052] occurrences matches {0..1} matches {	-- last_accting_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0053] occurrences matches {0..1} matches {	-- check_date_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Orders">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"order_id">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"patient_id">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"visit_id">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"order_no">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"order_sub_no">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"emergency_attr">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"mother_baby_attr">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"own_drug_attr">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"skin_test_attr">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"reserved_order_attr">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"afterward_order_attr">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"repeat_indicator">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"order_class">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"order_text">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"order_code">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"dosage">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"dosage_units">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"administration_code">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"administration">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"start_date_time">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"stop_date_time_plan">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"stop_date_time">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"duration">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"duration_units">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"freq_code">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"frequency">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"freq_counter">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"freq_interval">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"freq_interval_unit">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"memo">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"ordering_dept_name">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"ordering_dept_code">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"start_doctor_name">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"start_doctor_code">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"stop_doctor_name">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"stop_doctor_code">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"perform_ward_name">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"perform_ward_code">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"start_nurse_name">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"start_nurse_code">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"stop_nurse_name">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"stop_nurse_code">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"start_order_enter_date_time">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"stop_order_enter_date_time">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"order_status">
+					description = <"*">
+				>
+				["at0049"] = <
+					text = <"cds_semantics">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"order_print_attr">
+					description = <"*">
+				>
+				["at0051"] = <
+					text = <"last_perform_date_time">
+					description = <"*">
+				>
+				["at0052"] = <
+					text = <"last_accting_date_time">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"check_date_time">
+					description = <"*">
+				>
+			>
+		>
+	>

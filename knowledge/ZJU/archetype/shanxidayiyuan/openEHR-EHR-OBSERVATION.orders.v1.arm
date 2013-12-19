@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="@openEHR">
+	<class name="openEHR-EHR-OBSERVATION.orders.v1">
+		<id name="/uid/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0025]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0026]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0027]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0028]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0029]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0030]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0031]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0032]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0033]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0034]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0035]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0036]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0037]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0038]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0039]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0040]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0041]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0042]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0043]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0044]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0045]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0046]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0048]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0049]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0050]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0051]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0052]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0053]/value/dateTime"/>
+	</class>
+</hibernate-mapping>

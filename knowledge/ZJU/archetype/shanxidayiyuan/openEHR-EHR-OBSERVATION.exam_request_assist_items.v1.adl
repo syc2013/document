@@ -1,0 +1,112 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.exam_request_assist_items.v1
+
+concept
+	[at0000]	-- Exam request assist items
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"D5D8CFA4CD7CBFC55E621A5D6E66265B">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Exam request assist items
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- era_serial_no
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- assist_item_type
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- assist_item_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- assist_item_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- name_for_show
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Exam request assist items">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"era_serial_no">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"assist_item_type">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"assist_item_name">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"assist_item_code">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"name_for_show">
+					description = <"*">
+				>
+			>
+		>
+	>

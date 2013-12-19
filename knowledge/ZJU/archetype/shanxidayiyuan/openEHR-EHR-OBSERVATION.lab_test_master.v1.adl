@@ -1,0 +1,256 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.lab_test_master.v1
+
+concept
+	[at0000]	-- Lab test master
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"1568CE75F8A170270182EB6DD1B591D6">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Lab test master
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- test_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- patient_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- visit_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- test_req_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- his_test_id
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- order_id
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- test_no
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- lab_test_subject_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- lab_test_subject_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- sample_class_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {	-- sample_class_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- test_tube_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- test_tube_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {	-- lab_test_type_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {	-- lab_test_type_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {	-- execute_dept_code
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {	-- execute_dept_name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {	-- test_status
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {	-- test_time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {	-- is_read
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- is_normal
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Lab test master">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"test_id">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"patient_id">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"visit_id">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"test_req_id">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"his_test_id">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"order_id">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"test_no">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"lab_test_subject_code">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"lab_test_subject_name">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"sample_class_code">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"sample_class_name">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"test_tube_code">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"test_tube_name">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"lab_test_type_code">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"lab_test_type_name">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"execute_dept_code">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"execute_dept_name">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"test_status">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"test_time">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"is_read">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"is_normal">
+					description = <"*">
+				>
+			>
+		>
+	>

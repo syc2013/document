@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="openEHR-DEMOGRAPHIC-PERSON.master_patient_index_modifyed_log.v1">
+    <id name="/uid/value"/>
+    <property name="/details[at0001]/items[at0004]/value/value"/>
+    <property name="/details[at0001]/items[at0005]/value/value"/>
+    <property name="/details[at0001]/items[at0006]/value/value"/>
+    <property name="/details[at0001]/items[at0007]/value/value"/>
+    <property name="/details[at0001]/items[at0008]/value/dateTime"/>
+    <property name="/details[at0001]/items[at0009]/value/value"/>
+    <property name="/details[at0001]/items[at0010]/value/value"/>
+    <property name="/details[at0001]/items[at0011]/value/value"/>
+    <property name="/details[at0001]/items[at0012]/value/value"/>
+    <property name="/details[at0001]/items[at0013]/value/value"/>
+    <property name="/details[at0001]/items[at0014]/value/value"/>
+    <property name="/details[at0001]/items[at0015]/value/value"/>
+    <property name="/details[at0001]/items[at0016]/value/value"/>
+    <property name="/details[at0001]/items[at0017]/value/value"/>
+    <property name="/details[at0001]/items[at0018]/value/value"/>
+    <property name="/details[at0001]/items[at0019]/value/value"/>
+    <property name="/details[at0001]/items[at0020]/value/value"/>
+    <property name="/details[at0001]/items[at0021]/value/value"/>
+    <property name="/details[at0001]/items[at0022]/value/value"/>
+    <property name="/details[at0001]/items[at0023]/value/value"/>
+    <property name="/details[at0001]/items[at0024]/value/value"/>
+    <property name="/details[at0001]/items[at0025]/value/value"/>
+    <property name="/details[at0001]/items[at0026]/value/value"/>
+    <property name="/details[at0001]/items[at0027]/value/value"/>
+    <property name="/details[at0001]/items[at0028]/value/value"/>
+    <property name="/details[at0001]/items[at0029]/value/value"/>
+    <property name="/details[at0001]/items[at0030]/value/dateTime"/>
+    <property name="/details[at0001]/items[at0031]/value/value"/>
+    <property name="/details[at0001]/items[at0032]/value/value"/>
+    <property name="/details[at0001]/items[at0042]/value/value"/>
+    <property name="/details[at0001]/items[at0043]/value/value"/>
+    <property name="/details[at0001]/items[at0044]/value/value"/>
+    <property name="/details[at0001]/items[at0045]/value/value"/>
+    <property name="/details[at0001]/items[at0046]/value/magnitude"/>
+    <property name="/details[at0001]/items[at0047]/value/dateTime"/>
+  </class>
+</hibernate-mapping>
