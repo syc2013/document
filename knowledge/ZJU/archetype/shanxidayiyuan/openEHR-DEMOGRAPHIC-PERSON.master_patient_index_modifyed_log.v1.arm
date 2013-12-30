@@ -9,7 +9,7 @@
     <property name="/details[at0001]/items[at0005]/value/value"/>
     <property name="/details[at0001]/items[at0006]/value/value"/>
     <property name="/details[at0001]/items[at0007]/value/value"/>
-    <property name="/details[at0001]/items[at0008]/value/dateTime"/>
+    <property name="/details[at0001]/items[at0008]/value/value"/>
     <property name="/details[at0001]/items[at0009]/value/value"/>
     <property name="/details[at0001]/items[at0010]/value/value"/>
     <property name="/details[at0001]/items[at0011]/value/value"/>
@@ -31,7 +31,7 @@
     <property name="/details[at0001]/items[at0027]/value/value"/>
     <property name="/details[at0001]/items[at0028]/value/value"/>
     <property name="/details[at0001]/items[at0029]/value/value"/>
-    <property name="/details[at0001]/items[at0030]/value/dateTime"/>
+    <property name="/details[at0001]/items[at0030]/value/value"/>
     <property name="/details[at0001]/items[at0031]/value/value"/>
     <property name="/details[at0001]/items[at0032]/value/value"/>
     <property name="/details[at0001]/items[at0042]/value/value"/>
@@ -39,6 +39,6 @@
     <property name="/details[at0001]/items[at0044]/value/value"/>
     <property name="/details[at0001]/items[at0045]/value/value"/>
     <property name="/details[at0001]/items[at0046]/value/magnitude"/>
-    <property name="/details[at0001]/items[at0047]/value/dateTime"/>
+    <property name="/details[at0001]/items[at0047]/value/value"/>
   </class>
 </hibernate-mapping>
