@@ -8,7 +8,7 @@
 		<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
-    <property type="org.joda.time.contrib.hibernate.PersistentDateTime" name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/dateTime"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>

@@ -14,7 +14,7 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
-    <property type="org.joda.time.contrib.hibernate.PersistentDateTime" name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/dateTime"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude"/>
 	</class>
 </hibernate-mapping>
