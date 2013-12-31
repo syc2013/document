@@ -4,7 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="@openEHR">
   <class name="openEHR-EHR-OBSERVATION.patient_visit.v1">
-    <id name="/uid/value"/>
+    <id name="/hibernarmId">
+      <generator class="native"/>
+    </id>
+    <property name="/uid/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
