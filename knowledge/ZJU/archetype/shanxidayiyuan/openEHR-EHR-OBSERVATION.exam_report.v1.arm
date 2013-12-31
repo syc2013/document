@@ -3,9 +3,9 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="@openEHR">
-	<class name="openEHR-EHR-OBSERVATION.exam_report.v1">
-		<id name="/uid/value"/>
-		<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
+  <class name="openEHR-EHR-OBSERVATION.exam_report.v1">
+    <id name="/uid/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value"/>
@@ -13,7 +13,7 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value"/>
@@ -24,5 +24,5 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/magnitude"/>
-	</class>
+  </class>
 </hibernate-mapping>

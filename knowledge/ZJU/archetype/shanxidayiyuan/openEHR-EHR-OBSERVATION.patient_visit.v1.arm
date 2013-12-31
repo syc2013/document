@@ -3,8 +3,8 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="@openEHR">
-	<class name="openEHR-EHR-OBSERVATION.patient_visit.v1">
-		<id name="/uid/value"/>
+  <class name="openEHR-EHR-OBSERVATION.patient_visit.v1">
+    <id name="/uid/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
@@ -14,7 +14,7 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude"/>
-	</class>
+  </class>
 </hibernate-mapping>

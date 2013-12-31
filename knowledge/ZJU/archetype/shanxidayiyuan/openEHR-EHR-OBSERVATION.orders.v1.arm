@@ -3,8 +3,8 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="@openEHR">
-	<class name="openEHR-EHR-OBSERVATION.orders.v1">
-		<id name="/uid/value"/>
+  <class name="openEHR-EHR-OBSERVATION.orders.v1">
+    <id name="/uid/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
@@ -24,9 +24,9 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/dateTime"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/dateTime"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0025]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0025]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0026]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0027]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0028]/value/value"/>
@@ -47,13 +47,13 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0043]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0044]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0045]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0046]/value/dateTime"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value/dateTime"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0046]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0048]/value/magnitude"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0049]/value/value"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0050]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0051]/value/dateTime"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0052]/value/dateTime"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0053]/value/dateTime"/>
-	</class>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0051]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0052]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0053]/value/value"/>
+  </class>
 </hibernate-mapping>
