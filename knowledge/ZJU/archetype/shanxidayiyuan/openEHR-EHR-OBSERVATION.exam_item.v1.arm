@@ -8,12 +8,12 @@
         <generator class="native"/>
       </id>
       <property name="/uid/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/magnitude"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_req_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="exam_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/magnitude" column="exam_item_no"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="exam_class"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="exam_sub_class"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="exam_item_name"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="exam_item_code"/>
     </class>
 </hibernate-mapping>

@@ -8,24 +8,24 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/magnitude" column="report_no"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/magnitude" column="storage_mode"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="report_url"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="exam_desc"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="exam_view"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="exam_diag"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="exam_memo"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="report_date"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value" column="reporter_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value" column="reporter_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value" column="verifier_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value" column="verifier_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value" column="data_type"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value" column="first_media_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value" column="first_path"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value" column="second_media_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value" column="second_path"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/magnitude" column="is_abnormal"/>
   </class>
 </hibernate-mapping>

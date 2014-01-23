@@ -8,55 +8,55 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0025]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0026]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0027]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0028]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0029]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0030]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0031]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0032]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0033]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0034]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0035]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0036]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0037]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0038]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0039]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0040]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0041]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0042]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0043]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0044]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0045]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0046]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0048]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0049]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0050]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0051]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0052]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0053]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude" column="order_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/magnitude" column="order_no"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/magnitude" column="order_sub_no"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude" column="emergency_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/magnitude" column="mother_baby_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/magnitude" column="own_drug_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/magnitude" column="skin_test_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/magnitude" column="reserved_order_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude" column="afterward_order_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude" column="repeat_indicator"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value" column="order_class"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value" column="order_text"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value" column="order_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/magnitude" column="dosage"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value" column="dosage_units"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value" column="administration_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/value" column="administration"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/value" column="start_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/value" column="stop_date_time_plan"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0025]/value/value" column="stop_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0026]/value/magnitude" column="duration"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0027]/value/value" column="duration_units"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0028]/value/value" column="freq_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0029]/value/value" column="frequency"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0030]/value/magnitude" column="freq_counter"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0031]/value/magnitude" column="freq_interval"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0032]/value/value" column="freq_interval_unit"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0033]/value/value" column="memo"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0034]/value/value" column="ordering_dept_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0035]/value/value" column="ordering_dept_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0036]/value/value" column="start_doctor_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0037]/value/value" column="start_doctor_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0038]/value/value" column="stop_doctor_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0039]/value/value" column="stop_doctor_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0040]/value/value" column="perform_ward_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0041]/value/value" column="perform_ward_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0042]/value/value" column="start_nurse_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0043]/value/value" column="start_nurse_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0044]/value/value" column="stop_nurse_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0045]/value/value" column="stop_nurse_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0046]/value/value" column="start_order_enter_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value/value" column="stop_order_enter_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0048]/value/magnitude" column="order_status"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0049]/value/value" column="cds_semantics"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0050]/value/magnitude" column="order_print_attr"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0051]/value/value" column="last_perform_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0052]/value/value" column="last_accting_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0053]/value/value" column="check_date_time"/>
   </class>
 </hibernate-mapping>

@@ -8,47 +8,47 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/details[at0001]/items[at0004]/value/value"/>
-    <property name="/details[at0001]/items[at0005]/value/value"/>
-    <property name="/details[at0001]/items[at0006]/value/value"/>
-    <property name="/details[at0001]/items[at0007]/value/value"/>
-    <property name="/details[at0001]/items[at0008]/value/value"/>
-    <property name="/details[at0001]/items[at0009]/value/value"/>
-    <property name="/details[at0001]/items[at0010]/value/value"/>
-    <property name="/details[at0001]/items[at0011]/value/value"/>
-    <property name="/details[at0001]/items[at0012]/value/value"/>
-    <property name="/details[at0001]/items[at0013]/value/value"/>
-    <property name="/details[at0001]/items[at0014]/value/value"/>
-    <property name="/details[at0001]/items[at0015]/value/value"/>
-    <property name="/details[at0001]/items[at0016]/value/value"/>
-    <property name="/details[at0001]/items[at0017]/value/value"/>
-    <property name="/details[at0001]/items[at0018]/value/value"/>
-    <property name="/details[at0001]/items[at0019]/value/value"/>
-    <property name="/details[at0001]/items[at0020]/value/value"/>
-    <property name="/details[at0001]/items[at0021]/value/value"/>
-    <property name="/details[at0001]/items[at0022]/value/value"/>
-    <property name="/details[at0001]/items[at0023]/value/value"/>
-    <property name="/details[at0001]/items[at0024]/value/value"/>
-    <property name="/details[at0001]/items[at0025]/value/value"/>
-    <property name="/details[at0001]/items[at0026]/value/value"/>
-    <property name="/details[at0001]/items[at0027]/value/value"/>
-    <property name="/details[at0001]/items[at0028]/value/value"/>
-    <property name="/details[at0001]/items[at0029]/value/value"/>
-    <property name="/details[at0001]/items[at0030]/value/value"/>
-    <property name="/details[at0001]/items[at0031]/value/value"/>
-    <property name="/details[at0001]/items[at0032]/value/value"/>
-    <property name="/details[at0001]/items[at0033]/value/value"/>
-    <property name="/details[at0001]/items[at0034]/value/value"/>
-    <property name="/details[at0001]/items[at0035]/value/value"/>
-    <property name="/details[at0001]/items[at0036]/value/value"/>
-    <property name="/details[at0001]/items[at0037]/value/value"/>
-    <property name="/details[at0001]/items[at0038]/value/value"/>
-    <property name="/details[at0001]/items[at0039]/value/value"/>
-    <property name="/details[at0001]/items[at0040]/value/value"/>
-    <property name="/details[at0001]/items[at0041]/value/value"/>
-    <property name="/details[at0001]/items[at0042]/value/value"/>
-    <property name="/details[at0001]/items[at0043]/value/value"/>
-    <property name="/details[at0001]/items[at0044]/value/value"/>
-    <property name="/details[at0001]/items[at0045]/value/value"/>
+    <property name="/details[at0001]/items[at0004]/value/value" column="patient_id"/>
+    <property name="/details[at0001]/items[at0005]/value/value" column="name"/>
+    <property name="/details[at0001]/items[at0006]/value/value" column="name_phonetic"/>
+    <property name="/details[at0001]/items[at0007]/value/value" column="gender"/>
+    <property name="/details[at0001]/items[at0008]/value/value" column="date_of_birth"/>
+    <property name="/details[at0001]/items[at0009]/value/value" column="birth_place"/>
+    <property name="/details[at0001]/items[at0010]/value/value" column="nationality"/>
+    <property name="/details[at0001]/items[at0011]/value/value" column="ethnic_group"/>
+    <property name="/details[at0001]/items[at0012]/value/value" column="marital_status"/>
+    <property name="/details[at0001]/items[at0013]/value/value" column="career"/>
+    <property name="/details[at0001]/items[at0014]/value/value" column="degree"/>
+    <property name="/details[at0001]/items[at0015]/value/value" column="blood_type_abo"/>
+    <property name="/details[at0001]/items[at0016]/value/value" column="blood_type_rh"/>
+    <property name="/details[at0001]/items[at0017]/value/value" column="identity_card_no"/>
+    <property name="/details[at0001]/items[at0018]/value/value" column="household_no"/>
+    <property name="/details[at0001]/items[at0019]/value/value" column="passport_no"/>
+    <property name="/details[at0001]/items[at0020]/value/value" column="military_id"/>
+    <property name="/details[at0001]/items[at0021]/value/value" column="health_insurance_id"/>
+    <property name="/details[at0001]/items[at0022]/value/value" column="health_card_no"/>
+    <property name="/details[at0001]/items[at0023]/value/value" column="email"/>
+    <property name="/details[at0001]/items[at0024]/value/value" column="mailing_address"/>
+    <property name="/details[at0001]/items[at0025]/value/value" column="zip_code"/>
+    <property name="/details[at0001]/items[at0026]/value/value" column="phone_no_mobile"/>
+    <property name="/details[at0001]/items[at0027]/value/value" column="phone_no_home"/>
+    <property name="/details[at0001]/items[at0028]/value/value" column="phone_no_business"/>
+    <property name="/details[at0001]/items[at0029]/value/value" column="death_indicator"/>
+    <property name="/details[at0001]/items[at0030]/value/value" column="death_time"/>
+    <property name="/details[at0001]/items[at0031]/value/value" column="created_date"/>
+    <property name="/details[at0001]/items[at0032]/value/value" column="created_by"/>
+    <property name="/details[at0001]/items[at0033]/value/value" column="last_modify_date"/>
+    <property name="/details[at0001]/items[at0034]/value/value" column="last_modfied_by"/>
+    <property name="/details[at0001]/items[at0035]/value/value" column="voided_indicator"/>
+    <property name="/details[at0001]/items[at0036]/value/value" column="voided_date"/>
+    <property name="/details[at0001]/items[at0037]/value/value" column="voided_by"/>
+    <property name="/details[at0001]/items[at0038]/value/value" column="ref_patient_id"/>
+    <property name="/details[at0001]/items[at0039]/value/value" column="inpatientno"/>
+    <property name="/details[at0001]/items[at0040]/value/value" column="outpatientno"/>
+    <property name="/details[at0001]/items[at0041]/value/value" column="emergencyno"/>
+    <property name="/details[at0001]/items[at0042]/value/value" column="patient_healthcare_type_code"/>
+    <property name="/details[at0001]/items[at0043]/value/value" column="patient_healthcare_type_name"/>
+    <property name="/details[at0001]/items[at0044]/value/value" column="patient_healthcare_property_code"/>
+    <property name="/details[at0001]/items[at0045]/value/value" column="patient_healthcare_property_name"/>
   </class>
 </hibernate-mapping>

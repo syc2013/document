@@ -8,17 +8,17 @@
         <generator class="native"/>
       </id>
       <property name="/uid/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/magnitude"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="exam_req_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="his_exam_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="exam_dept_name"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="exam_dept_code"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="scheduled_date_time"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="exam_time"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/magnitude" column="exam_status"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude" column="is_read"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude" column="is_normal"/>
     </class>
 </hibernate-mapping>

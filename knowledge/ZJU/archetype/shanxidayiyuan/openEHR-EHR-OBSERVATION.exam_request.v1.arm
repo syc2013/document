@@ -8,24 +8,24 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_req_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/magnitude" column="order_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="priority"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="req_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="req_dept_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="req_dept_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="req_doctor_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value" column="req_doctor_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value" column="purpose"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value" column="syndrom"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value" column="signs"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value" column="relevant_lab_test"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value" column="relevant_diag"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value" column="diagnosis"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value" column="memo"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value" column="transportation_mode"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/magnitude" column="exam_request_status"/>
   </class>
 </hibernate-mapping>

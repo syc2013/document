@@ -8,10 +8,10 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude" column="era_serial_no"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/magnitude" column="assist_item_type"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="assist_item_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="assist_item_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="name_for_show"/>
   </class>
 </hibernate-mapping>

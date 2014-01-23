@@ -8,26 +8,26 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/magnitude"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/magnitude"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="test_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="test_req_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="his_test_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude" column="order_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="test_no"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="lab_test_subject_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="lab_test_subject_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value" column="sample_class_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value" column="sample_class_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value" column="test_tube_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value" column="test_tube_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value" column="lab_test_type_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value" column="lab_test_type_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value" column="execute_dept_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value" column="execute_dept_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/magnitude" column="test_status"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/value" column="test_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0023]/value/magnitude" column="is_read"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0024]/value/magnitude" column="is_normal"/>
   </class>
 </hibernate-mapping>
