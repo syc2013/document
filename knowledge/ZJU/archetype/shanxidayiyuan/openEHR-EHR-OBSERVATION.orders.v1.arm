@@ -58,5 +58,6 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0051]/value/value" column="last_perform_date_time"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0052]/value/value" column="last_accting_date_time"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0053]/value/value" column="check_date_time"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0054]/value/value" column="order_status_memo"/>
   </class>
 </hibernate-mapping>
