@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"EFD927F735F0D4B11EA08B71DAFEAA92">
+		["MD5-CAM-1.0.1"] = <"F09FC5C0DBAA4DEC34A11BE954A68F2E">
 	>
 
 definition
@@ -68,6 +68,12 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
+							ELEMENT[at0016] occurrences matches {0..1} matches {	-- Quantity
+								value matches {
+									C_DV_QUANTITY <
+									>
+								}
+							}
 						}
 					}
 				}
@@ -110,6 +116,10 @@ ontology
 				["at0015"] = <
 					text = <"PatientID">
 					description = <"openEHR-DEMOGRAPHIC-PERSON.patient.v1">
+				>
+				["at0016"] = <
+					text = <"Quantity">
+					description = <"*">
 				>
 			>
 		>
