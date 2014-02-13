@@ -18,13 +18,13 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="req_dept_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="req_doctor_name"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value" column="req_doctor_id"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value" column="purpose"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value" column="syndrom"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value" column="signs"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value" column="relevant_lab_test"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value" column="relevant_diag"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value" column="diagnosis"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value" column="memo"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/value" column="purpose" length="8000"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/value" column="syndrom" length="8000"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/value" column="signs" length="8000"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0017]/value/value" column="relevant_lab_test" length="8000"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0018]/value/value" column="relevant_diag" length="8000"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0019]/value/value" column="diagnosis" length="8000"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0020]/value/value" column="memo" length="8000"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0021]/value/value" column="transportation_mode"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0022]/value/magnitude" column="exam_request_status"/>
   </class>
