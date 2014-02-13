@@ -13,7 +13,7 @@
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="data_type"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="series_no"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="image_no"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="image_flag"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude" column="image_flag"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="first_media_name"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="first_path"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="second_media_name"/>

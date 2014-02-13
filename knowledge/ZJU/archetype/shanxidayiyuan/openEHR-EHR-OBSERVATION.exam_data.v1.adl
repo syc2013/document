@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"2C38288F73973E83995D09EF68C5BB37">
+		["MD5-CAM-1.0.1"] = <"AD30A6B13CF08F5FB116789B9B6F2F4B">
 	>
 
 definition
@@ -60,7 +60,7 @@ definition
 									}
 									ELEMENT[at0009] occurrences matches {0..1} matches {	-- image_flag
 										value matches {
-											DV_TEXT matches {*}
+											DV_COUNT matches {*}
 										}
 									}
 									ELEMENT[at0010] occurrences matches {0..1} matches {	-- first_media_name
