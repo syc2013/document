@@ -50,5 +50,6 @@
     <property name="/details[at0001]/items[at0043]/value/value" column="patient_healthcare_type_name"/>
     <property name="/details[at0001]/items[at0044]/value/value" column="patient_healthcare_property_code"/>
     <property name="/details[at0001]/items[at0045]/value/value" column="patient_healthcare_property_name"/>
+    <property name="/details[at0001]/items[at0046]/value/magnitude" column="serial_no"/>
   </class>
 </hibernate-mapping>

@@ -204,6 +204,11 @@ definition
 							DV_DATE_TIME matches {*}
 						}
 					}
+					ELEMENT[at0048] occurrences matches {0..1} matches {	-- serial_no
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
 				}
 			}
 		}
@@ -360,6 +365,10 @@ ontology
 				>
 				["at0047"] = <
 					text = <"edit_time">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"serial_no">
 					description = <"*">
 				>
 			>

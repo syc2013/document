@@ -239,6 +239,11 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0046] occurrences matches {0..1} matches {	-- serial_no
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
 				}
 			}
 		}
@@ -423,6 +428,10 @@ ontology
 				>
 				["at0045"] = <
 					text = <"patient_healthcare_property_name">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"serial_no">
 					description = <"*">
 				>
 			>

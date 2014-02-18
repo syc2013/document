@@ -43,5 +43,6 @@
     <property name="/details[at0001]/items[at0045]/value/value" column="patient_healthcare_property_name"/>
     <property name="/details[at0001]/items[at0046]/value/magnitude" column="mpi_serial_no"/>
     <property name="/details[at0001]/items[at0047]/value/value" column="edit_time"/>
+    <property name="/details[at0001]/items[at0048]/value/magnitude" column="serial_no"/>
   </class>
 </hibernate-mapping>
