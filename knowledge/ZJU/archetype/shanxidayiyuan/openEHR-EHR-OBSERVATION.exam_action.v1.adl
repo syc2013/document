@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"D81E030434BCAE296494CA622F53D0E6">
+		["MD5-CAM-1.0.1"] = <"D2C591B68FC760CDBE9994802AA59F41">
 	>
 
 definition
@@ -66,6 +66,11 @@ definition
 									ELEMENT[at0010] occurrences matches {0..1} matches {	-- actor_name
 										value matches {
 											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- serial_no
+										value matches {
+											DV_COUNT matches {*}
 										}
 									}
 								}
@@ -123,6 +128,10 @@ ontology
 				>
 				["at0010"] = <
 					text = <"actor_name">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"serial_no">
 					description = <"*">
 				>
 			>
