@@ -1,0 +1,489 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.gsm.v1
+
+concept
+	[at0000]	-- GSM
+language
+	original_language = <[ISO_639-1::zh]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"BBB075D9A3CF57F8B624CC8F3B559BAF">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- GSM
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0004] occurrences matches {0..1} matches {	-- SAMPLE
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0005] occurrences matches {0..1} matches {	-- anchor
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0006] occurrences matches {0..1} matches {	-- biomaterial provider ch
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0007] occurrences matches {0..1} matches {	-- channel count
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0008] occurrences matches {0..1} matches {	-- characteristics ch
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0009] occurrences matches {0..1} matches {	-- contact address
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {	-- contact city
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {	-- contact country
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {	-- contact department
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {	-- contact email
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0014] occurrences matches {0..1} matches {	-- contact fax
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0015] occurrences matches {0..1} matches {	-- contact institute
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {	-- contact laboratory
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0017] occurrences matches {0..1} matches {	-- contact name
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {	-- contact phone
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0019] occurrences matches {0..1} matches {	-- contact state
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0020] occurrences matches {0..1} matches {	-- contact web link
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0021] occurrences matches {0..1} matches {	-- contact zip
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0022] occurrences matches {0..1} matches {	-- contact postal code
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0023] occurrences matches {0..1} matches {	-- data processing
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0024] occurrences matches {0..1} matches {	-- data row count
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0025] occurrences matches {0..1} matches {	-- description
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0026] occurrences matches {0..1} matches {	-- extract protocol
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0027] occurrences matches {0..1} matches {	-- geo accession
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0028] occurrences matches {0..1} matches {	-- growth protocol
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0029] occurrences matches {0..1} matches {	-- hyb protocol
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0030] occurrences matches {0..1} matches {	-- label ch
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0031] occurrences matches {0..1} matches {	-- label protocol
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0032] occurrences matches {0..1} matches {	-- last update date
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0033] occurrences matches {0..1} matches {	-- molecule
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0034] occurrences matches {0..1} matches {	-- organism
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0035] occurrences matches {0..1} matches {	-- platform id
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0036] occurrences matches {0..1} matches {	-- scan protocol
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0037] occurrences matches {0..1} matches {	-- series id
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0038] occurrences matches {0..1} matches {	-- source name ch
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0039] occurrences matches {0..1} matches {	-- status
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0040] occurrences matches {0..1} matches {	-- submission date
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0041] occurrences matches {0..1} matches {	-- supplementary file
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0042] occurrences matches {0..1} matches {	-- table
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0043] occurrences matches {0..1} matches {	-- table begin
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0044] occurrences matches {0..1} matches {	-- table end
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0045] occurrences matches {0..1} matches {	-- tag count
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0046] occurrences matches {0..1} matches {	-- tag length
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0047] occurrences matches {0..1} matches {	-- taxid ch
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0048] occurrences matches {0..1} matches {	-- title
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0049] occurrences matches {0..1} matches {	-- treatment protocol ch
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0050] occurrences matches {0..1} matches {	-- type
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"GSM">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"SAMPLE">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"anchor">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"biomaterial provider ch">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"channel count">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"characteristics ch">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"contact address">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"contact city">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"contact country">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"contact department">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"contact email">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"contact fax">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"contact institute">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"contact laboratory">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"contact name">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"contact phone">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"contact state">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"contact web link">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"contact zip">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"contact postal code">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"data processing">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"data row count">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"description">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"extract protocol">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"geo accession">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"growth protocol">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"hyb protocol">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"label ch">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"label protocol">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"last update date">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"molecule">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"organism">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"platform id">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"scan protocol">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"series id">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"source name ch">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"status">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"submission date">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"supplementary file">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"table">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"table begin">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"table end">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"tag count">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"tag length">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"taxid ch">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"title">
+					description = <"*">
+				>
+				["at0049"] = <
+					text = <"treatment protocol ch">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"type">
+					description = <"*">
+				>
+			>
+		>
+	>
