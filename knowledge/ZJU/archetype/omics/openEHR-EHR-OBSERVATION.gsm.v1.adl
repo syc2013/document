@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"BBB075D9A3CF57F8B624CC8F3B559BAF">
+		["MD5-CAM-1.0.1"] = <"8F6F79C69C2D760B7701C7B06EAAB023">
 	>
 
 definition
@@ -115,12 +115,7 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0021] occurrences matches {0..1} matches {	-- contact zip
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0022] occurrences matches {0..1} matches {	-- contact postal code
+											ELEMENT[at0021] occurrences matches {0..1} matches {	-- contact zip or postal code
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -365,11 +360,7 @@ ontology
 					description = <"*">
 				>
 				["at0021"] = <
-					text = <"contact zip">
-					description = <"*">
-				>
-				["at0022"] = <
-					text = <"contact postal code">
+					text = <"contact zip or postal code">
 					description = <"*">
 				>
 				["at0023"] = <

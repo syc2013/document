@@ -21,8 +21,8 @@
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0018]/value/value" column="contact_phone"/>
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0019]/value/value" column="contact_state"/>
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0020]/value/value" column="contact_web_link"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0021]/value/value" column="contact_zip"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0022]/value/value" column="contact_postal_code"/>
+	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0021]/value/value" column="contact_zip_or_postal_code"/>
+
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0023]/value/value" column="data_processing"/>
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0024]/value/value" column="data_row_count"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0025]/value/value" column="description"/>
