@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"6390FDD43B6B6071774ED5F5043EE266">
+		["MD5-CAM-1.0.1"] = <"34C55A12823507123DEA7FB335468BD7">
 	>
 
 definition
@@ -33,7 +33,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {	-- mipml_serial_no
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- mpiml_serial_no
 										value matches {
 											DV_COUNT matches {*}
 										}
@@ -88,6 +88,11 @@ definition
 											DV_COUNT matches {*}
 										}
 									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- serial_no
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
 								}
 							}
 						}
@@ -118,7 +123,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"mipml_serial_no">
+					text = <"mpiml_serial_no">
 					description = <"*">
 				>
 				["at0005"] = <
@@ -159,6 +164,10 @@ ontology
 				>
 				["at0014"] = <
 					text = <"status">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"serial_no">
 					description = <"*">
 				>
 			>

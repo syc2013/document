@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"1568CE75F8A170270182EB6DD1B591D6">
+		["MD5-CAM-1.0.1"] = <"CBE6E2D8F25D285BD82F4DFAE55FFD81">
 	>
 
 definition
@@ -138,6 +138,11 @@ definition
 											DV_COUNT matches {*}
 										}
 									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {	-- serial_no
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
 								}
 							}
 						}
@@ -249,6 +254,10 @@ ontology
 				>
 				["at0024"] = <
 					text = <"is_normal">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"serial_no">
 					description = <"*">
 				>
 			>

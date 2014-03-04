@@ -179,7 +179,7 @@ definition
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0034] occurrences matches {0..1} matches {	-- last_modfied_by
+					ELEMENT[at0034] occurrences matches {0..1} matches {	-- last_modified_by
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -383,7 +383,7 @@ ontology
 					description = <"*">
 				>
 				["at0034"] = <
-					text = <"last_modfied_by">
+					text = <"last_modified_by">
 					description = <"*">
 				>
 				["at0035"] = <

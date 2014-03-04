@@ -38,7 +38,7 @@
     <property name="/details[at0001]/items[at0031]/value/value" column="created_date"/>
     <property name="/details[at0001]/items[at0032]/value/value" column="created_by"/>
     <property name="/details[at0001]/items[at0033]/value/value" column="last_modify_date"/>
-    <property name="/details[at0001]/items[at0034]/value/value" column="last_modfied_by"/>
+    <property name="/details[at0001]/items[at0034]/value/value" column="last_modified_by"/>
     <property name="/details[at0001]/items[at0035]/value/value" column="voided_indicator"/>
     <property name="/details[at0001]/items[at0036]/value/value" column="voided_date"/>
     <property name="/details[at0001]/items[at0037]/value/value" column="voided_by"/>

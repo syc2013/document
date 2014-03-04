@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"8527FA3DF0BF62145EFF8D200D01A307">
+		["MD5-CAM-1.0.1"] = <"744D0B53A5B3EF1FE42396851C67E4DD">
 	>
 
 definition
@@ -53,7 +53,7 @@ definition
 											DV_COUNT matches {*}
 										}
 									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {	-- req_data_time
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- req_date_time
 										value matches {
 											DV_DATE_TIME matches {*}
 										}
@@ -199,7 +199,7 @@ ontology
 					description = <"*">
 				>
 				["at0009"] = <
-					text = <"req_data_time">
+					text = <"req_date_time">
 					description = <"*">
 				>
 				["at0010"] = <

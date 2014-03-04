@@ -13,7 +13,8 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="actor_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="action_date_time"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="action_type_id"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="action_memo"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/value" column="action_memo" length="500"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="actor_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/magnitude" column="serial_no"/>
   </class>
 </hibernate-mapping>

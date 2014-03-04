@@ -8,7 +8,7 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude" column="mipml_serial_no"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude" column="mpiml_serial_no"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="visit_type"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="his_visit_id"/>
@@ -19,5 +19,6 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0012]/value/value" column="ward_name"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/value" column="visit_time"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude" column="status"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude" column="serial_no"/>
   </class>
 </hibernate-mapping>

@@ -20,5 +20,6 @@
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0013]/value/magnitude" column="exam_status"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0014]/value/magnitude" column="is_read"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0015]/value/magnitude" column="is_normal"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value/magnitude" column="serial_no"/>
     </class>
 </hibernate-mapping>
