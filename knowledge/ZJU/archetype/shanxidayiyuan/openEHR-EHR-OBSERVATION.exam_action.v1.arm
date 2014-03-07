@@ -9,7 +9,7 @@
       </id>
       <property name="/uid/value"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_req_id"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="exam_id"/>
+        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="exam_id" index="id_exam_id"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="actor_id"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="action_date_time"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="action_type_id"/>

@@ -8,11 +8,11 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="test_id"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="test_id" index="id_test_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id" index="id_patient_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id" index="id_visit_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/value" column="test_req_id"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="his_test_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value/value" column="his_test_id" index="id_his_test_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value/magnitude" column="order_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0010]/value/value" column="test_no"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0011]/value/value" column="lab_test_subject_code"/>

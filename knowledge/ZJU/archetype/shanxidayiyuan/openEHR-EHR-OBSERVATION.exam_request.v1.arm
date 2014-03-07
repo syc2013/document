@@ -8,7 +8,7 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_req_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/value" column="exam_req_id" index="id_exam_req_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value/value" column="patient_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/value" column="visit_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value/magnitude" column="order_id"/>

@@ -8,7 +8,7 @@
       <generator class="native"/>
     </id>
     <property name="/uid/value"/>
-    <property name="/details[at0001]/items[at0004]/value/value" column="patient_id"/>
+    <property name="/details[at0001]/items[at0004]/value/value" column="patient_id" index="id_patient_id"/>
     <property name="/details[at0001]/items[at0005]/value/value" column="name"/>
     <property name="/details[at0001]/items[at0006]/value/value" column="name_phonetic"/>
     <property name="/details[at0001]/items[at0007]/value/value" column="gender"/>
@@ -43,6 +43,6 @@
     <property name="/details[at0001]/items[at0045]/value/value" column="patient_healthcare_property_name"/>
     <property name="/details[at0001]/items[at0046]/value/magnitude" column="mpi_serial_no"/>
     <property name="/details[at0001]/items[at0047]/value/value" column="edit_time"/>
-    <property name="/details[at0001]/items[at0048]/value/magnitude" column="serial_no"/>
+    <property name="/details[at0001]/items[at0048]/value/magnitude" column="serial_no" index="id_serial_no"/>
   </class>
 </hibernate-mapping>
