@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"8BF5507C99337116C95BB3D214DA7660">
+		["MD5-CAM-1.0.1"] = <"3F7654C413AA6C3D8042313986EF1269">
 	>
 
 definition
@@ -185,12 +185,7 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0040] occurrences matches {0..1} matches {	-- table begin
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0041] occurrences matches {0..1} matches {	-- table end
+											ELEMENT[at0040] occurrences matches {0..1} matches {	-- table
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -371,11 +366,7 @@ ontology
 					description = <"*">
 				>
 				["at0040"] = <
-					text = <"table begin">
-					description = <"*">
-				>
-				["at0041"] = <
-					text = <"table end">
+					text = <"table">
 					description = <"*">
 				>
 				["at0042"] = <
