@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"005206ECEE73E2849A1D8FFD556019DC">
+		["MD5-CAM-1.0.1"] = <"3F7654C413AA6C3D8042313986EF1269">
 	>
 
 definition
@@ -100,12 +100,7 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0022] occurrences matches {0..1} matches {	-- contact zip
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0023] occurrences matches {0..1} matches {	-- contact postal code
+											ELEMENT[at0022] occurrences matches {0..1} matches {	-- contact zip or postal code
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -190,12 +185,7 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0040] occurrences matches {0..1} matches {	-- table begin
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0041] occurrences matches {0..1} matches {	-- table end
+											ELEMENT[at0040] occurrences matches {0..1} matches {	-- table
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -308,11 +298,7 @@ ontology
 					description = <"*">
 				>
 				["at0022"] = <
-					text = <"contact zip">
-					description = <"*">
-				>
-				["at0023"] = <
-					text = <"contact postal code">
+					text = <"contact zip or postal code">
 					description = <"*">
 				>
 				["at0024"] = <
@@ -380,11 +366,7 @@ ontology
 					description = <"*">
 				>
 				["at0040"] = <
-					text = <"table begin">
-					description = <"*">
-				>
-				["at0041"] = <
-					text = <"table end">
+					text = <"table">
 					description = <"*">
 				>
 				["at0042"] = <

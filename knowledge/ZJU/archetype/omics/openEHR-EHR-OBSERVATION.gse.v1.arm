@@ -16,8 +16,8 @@
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0013]/value/value" column="contact_name"/>
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0014]/value/value" column="contact_phone"/>
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0015]/value/value" column="contact_state"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0016]/value/value" column="contact_zip"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0017]/value/value" column="contact_postal_code"/>
+	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0016]/value/value" column="contact_zip_or_postal_code"/>
+
         <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0018]/value/value" column="contributor"/>
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0019]/value/value" column="geo_accession"/>
 	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0020]/value/value" column="last_update_date"/>
