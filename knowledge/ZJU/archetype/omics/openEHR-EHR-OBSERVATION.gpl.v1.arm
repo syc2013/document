@@ -3,45 +3,45 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-<class name="openEHR-EHR-OBSERVATION.gpl.v1">
-        <id name="/uid/value"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0009]/value/value" column="catalog_number"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0010]/value/value" column="coating"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0011]/value/value" column="contact_address"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0012]/value/value" column="contact_city"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0013]/value/value" column="contact_country"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0014]/value/value" column="contact_department"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0015]/value/value" column="contact_email"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0016]/value/value" column="contact_fax"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0017]/value/value" column="contact_institute"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0018]/value/value" column="contact_laboratory"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0019]/value/value" column="contact_name"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0020]/value/value" column="contact_phone"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0021]/value/value" column="contact_state"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0022]/value/value" column="contact_zip_or_postal_code"/>
-
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0024]/value/value" column="contributor"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0025]/value/value" column="data_row_count"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0026]/value/value" column="description"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0027]/value/value" column="distribution"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0028]/value/value" column="geo_accession"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0029]/value/value" column="last_update_date"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0030]/value/value" column="manufacture_protocol"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0031]/value/value" column="manufacture"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0032]/value/value" column="organism"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0033]/value/value" column="pubmed_id"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0034]/value/value" column="sample_id"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0035]/value/value" column="series_id"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0036]/value/value" column="status"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0037]/value/value" column="submission_date"/>
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0038]/value/value" column="supplementary_file"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0039]/value/value" column="support"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0040]/value/value" column="table"/>
-
-        <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0042]/value/value" column="taxid"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0043]/value/value" column="technology"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0044]/value/value" column="title"/>
-	<property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0045]/value/value" column="web_link"/>
-    </class>
-
+  <class name="openEHR-EHR-OBSERVATION.gpl.v1">
+    <id name="/hibernarmId">
+      <generator class="native"/>
+    </id>
+    <property name="/uid/value"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0009]/value/value" column="catalog_number"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0010]/value/value" column="coating"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0011]/value/value" column="contact_address"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0012]/value/value" column="contact_city"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0013]/value/value" column="contact_country"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0014]/value/value" column="contact_department"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0015]/value/value" column="contact_email"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0016]/value/value" column="contact_fax"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0017]/value/value" column="contact_institute"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0018]/value/value" column="contact_laboratory"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0019]/value/value" column="contact_name"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0020]/value/value" column="contact_phone"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0021]/value/value" column="contact_state"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0022]/value/value" column="contact_zip_or_postal_code"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0024]/value/value" column="contributor"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0025]/value/value" column="data_row_count"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0026]/value/value" column="description"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0027]/value/value" column="distribution"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0028]/value/value" column="geo_accession"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0029]/value/value" column="last_update_date"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0030]/value/value" column="manufacture_protocol"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0031]/value/value" column="manufacture"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0032]/value/value" column="organism"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0033]/value/value" column="pubmed_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0034]/value/value" column="sample_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0035]/value/value" column="series_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0036]/value/value" column="status"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0037]/value/value" column="submission_date"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0038]/value/value" column="supplementary_file"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0039]/value/value" column="support"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0040]/value/value" column="tbl"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0042]/value/value" column="taxid"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0043]/value/value" column="technology"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0044]/value/value" column="title"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0008]/items[at0045]/value/value" column="web_link"/>
+  </class>
 </hibernate-mapping>
