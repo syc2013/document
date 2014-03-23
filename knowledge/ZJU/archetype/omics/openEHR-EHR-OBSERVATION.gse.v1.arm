@@ -23,23 +23,26 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0018]/value/value" column="contributor"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0019]/value/value" column="geo_accession"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0020]/value/value" column="last_update_date"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0021]/value/value" column="overall_design"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0021]/value/value" column="overall_design" type="materialized_clob"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0039]/value/value" column="platform_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0022]/value/value" column="platform_organism"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0023]/value/value" column="platform_taxid"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0024]/value/value" column="pubmed_id"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0025]/value/value" column="relation"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0026]/value/value" column="repeats"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0027]/value/value" column="repeats_sample_list"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0028]/value/value" column="sample_id"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0028]/value/value" column="sample_id" type="materialized_clob"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0029]/value/value" column="sample_organism"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0030]/value/value" column="sample_taxid"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0031]/value/value" column="status"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0032]/value/value" column="submission_date"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0033]/value/value" column="summary"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0033]/value/value" column="summary" type="materialized_clob"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0040]/value/value" column="supplementary_file" type="materialized_clob"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0034]/value/value" column="title"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0035]/value/value" column="type"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0036]/value/value" column="variable"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0037]/value/value" column="variable_describtion"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0038]/value/value" column="variable_sample_list"/>
+
   </class>
 </hibernate-mapping>
