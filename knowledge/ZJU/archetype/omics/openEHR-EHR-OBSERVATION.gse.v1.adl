@@ -21,7 +21,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"DA6020426359BA83DBDADE238DBBF24C">
+		["MD5-CAM-1.0.1"] = <"A1EF416511007E3960102A07DEEC2E79">
 	>
 
 definition
@@ -115,6 +115,11 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
+											ELEMENT[at0039] occurrences matches {0..1} matches {	-- platform_id
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
 											ELEMENT[at0022] occurrences matches {0..1} matches {	-- paltform organism
 												value matches {
 													DV_TEXT matches {*}
@@ -171,6 +176,11 @@ definition
 												}
 											}
 											ELEMENT[at0033] occurrences matches {0..1} matches {	-- summary
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0040] occurrences matches {0..1} matches {	-- supplementary_file
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -365,6 +375,14 @@ ontology
 				>
 				["at0038"] = <
 					text = <"variable sample list">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"platform_id">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"supplementary_file">
 					description = <"*">
 				>
 			>
