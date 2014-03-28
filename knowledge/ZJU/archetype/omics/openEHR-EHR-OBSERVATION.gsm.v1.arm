@@ -28,7 +28,7 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0023]/value/value" column="data_processing" type="materialized_clob"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0024]/value/value" column="data_row_count"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0025]/value/value" column="description"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0026]/value/value" column="extract_protocol"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0026]/value/value" column="extract_protocol" type="materialized_clob"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0027]/value/value" column="geo_accession"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0028]/value/value" column="growth_protocol"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0029]/value/value" column="hyp_protocol" type="materialized_clob"/>
@@ -43,7 +43,7 @@
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0038]/value/value" column="source_name_ch"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0039]/value/value" column="status"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0040]/value/value" column="submission_date"/>
-    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0041]/value/value" column="supplementary_file"/>
+    <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0041]/value/value" column="supplementary_file" type="materialized_clob"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0042]/value/value" column="tbl" type="materialized_clob"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0045]/value/value" column="tag_count"/>
     <property name="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0046]/value/value" column="tag_length"/>
